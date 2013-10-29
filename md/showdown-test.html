@@ -6,7 +6,7 @@
 <meta name=author content='Theo Armour'>
 </head>
 <body>
-<script src=showdown.js ></script>
+<script src=http://jaanga.github.io/libs/md/showdown.js ></script>
 <script>
 // https://github.com/coreyti/showdown
 
@@ -21,7 +21,7 @@
 	textarea.style.cssText = 'height: ' + (window.innerHeight - 150) + 'px; width: 40%; ';
 
 	
-	var converter = new Showdown.converter(); // canot seem to load extensions
+	var converter = new Showdown.converter(); // cannot seem to load extensions
 	var output = document.body.appendChild( document.createElement( 'div' ) );
 	output.style.cssText = 'height: ' + (window.innerHeight - 150) + 'px;left: 50%; position: absolute; top: 50px; width: 45%; ';		
 				
