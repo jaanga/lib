@@ -1,12 +1,15 @@
 # Test.md
 
-# Markdown text goes in here
+
 
 
 ## Style in Div tag
 
+GitHub ignores style atttributes in a `DIV` tag.
+
+
 <div style="float:left;margin:60px;width:200px;" >
-<img src =http://www.w3schools.com/tags/img_pulpit.jpg" /><br>
+<img src=http://www.w3schools.com/tags/img_pulpit.jpg /><br>
 <a href="./boilerplate/leap-threejs-boilerplate.html" ><b>Boilerplate</b></a><br>
 A starting-off point file that loads the Three.js and Leap libraries and creates a simple 3D display of hands and pointables. 
 </div>
@@ -22,9 +25,12 @@ Record and replay Leap Motion JSON and BVH data capture.
 Much effort here - Nearly ready for prime time.
 </div>
 
-GitHub ignores style atttributes in a `DIV` tag.
+<br style=clear:both;>
+
+
 
 ## Figure & Figurecaption Tag
+
 
 <figure>
 <img src="http://www.w3schools.com/tags/img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
@@ -62,6 +68,11 @@ aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volup
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
 culpa qui officia deserunt mollit anim id est laborum.
 
+***
+
+From showdown-gui.html
+======================
+
 Markdown Syntax Guide
 =====================
 
@@ -69,6 +80,9 @@ This is an overview of Markdown's syntax.  For more information, visit the [Mark
 
  [Markdown web site]:
    http://daringfireball.net/projects/markdown/
+
+
+
 
 
 
@@ -125,11 +139,11 @@ Advanced links: Bare URLs
 
 You can write bare URLs by enclosing them in angle brackets:
 
-My web site is at &lt;http://www.attacklab.net&gt;.
+My web site is at <http://www.attacklab.net>.
 
 If you use this format for email addresses, Showdown will encode the address to make it harder for spammers to harvest.  Try it and look in the *HTML Output* pane to see the results:
 
-Humans can read this, but most spam harvesting robots can't: &lt;me@privacy.net&gt;
+Humans can read this, but most spam harvesting robots can't: <me@privacy.net>
 
 
 
@@ -211,7 +225,7 @@ A numbered list:
 
 A double-spaced list:
 
-- This list gets wrapped in `&lt;p&gt;` tags
+- This list gets wrapped in `<p>` tags
 
 - So there will be extra space between items
 
@@ -241,8 +255,8 @@ You can put other Markdown blocks in a list; just indent four spaces for each ne
 
 3. Blockquotes in a list item:
 
-    &gt; Skip a line and
-    &gt; indent the &gt;'s four spaces.
+    > Skip a line and
+    > indent the >'s four spaces.
 
 4. Preformatted text in a list item:
 
@@ -264,43 +278,43 @@ Simple blockquotes
 
 Blockquotes are indented:
 
-&gt; The syntax is based on the way email programs
-&gt; usually do quotations. You don't need to hard-wrap
-&gt; the paragraphs in your blockquotes, but it looks much nicer if you do.  Depends how lazy you feel.
+> The syntax is based on the way email programs
+> usually do quotations. You don't need to hard-wrap
+> the paragraphs in your blockquotes, but it looks much nicer if you do.  Depends how lazy you feel.
 
 
 Advanced blockquotes: Nesting
 -----------------------------
 
-You can put other Markdown blocks in a blockquote; just add a `&gt;` followed by a space:
+You can put other Markdown blocks in a blockquote; just add a `>` followed by a space:
 
 Parragraph breaks in a blockquote:
 
-&gt; The &gt; on the blank lines is optional.
-&gt; Include it or don't; Markdown doesn't care.
-&gt;
-&gt; But your plain text looks better to
-&gt; humans if you include the extra `&gt;`
-&gt; between paragraphs.
+> The > on the blank lines is optional.
+> Include it or don't; Markdown doesn't care.
+>
+> But your plain text looks better to
+> humans if you include the extra `>`
+> between paragraphs.
 
 
 Blockquotes within a blockquote:
 
-&gt; A standard blockquote is indented
-&gt; &gt; A nested blockquote is indented more
-&gt; &gt; &gt; &gt; You can nest to any depth.
+> A standard blockquote is indented
+> > A nested blockquote is indented more
+> > > > You can nest to any depth.
 
 
 Lists in a blockquote:
 
-&gt; - A list in a blockquote
-&gt; - With a &gt; and space in front of it
-&gt;     * A sublist
+> - A list in a blockquote
+> - With a > and space in front of it
+>     * A sublist
 
 Preformatted text in a blockquote:
 
-&gt;     Indent five spaces total.  The first
-&gt;     one is part of the blockquote designator.
+>     Indent five spaces total.  The first
+>     one is part of the blockquote designator.
 
 
 
@@ -348,11 +362,11 @@ Inline HTML
 
 If you need to do something that Markdown can't handle, you can always just use HTML:
 
- Strikethrough humor is &lt;strike&gt;funny&lt;/strike&gt;.
+ Strikethrough humor is <strike>funny</strike>.
 
 Markdown is smart enough not to mangle your span-level HTML:
 
-&lt;u&gt;Markdown works *fine* in here.&lt;/u&gt;
+<u>Markdown works *fine* in here.</u>
 
 Block-level HTML elments have a few restrictions:
 
@@ -364,9 +378,9 @@ Block-level HTML elments have a few restrictions:
 
 So:
 
-&lt;div style="background-color: lightgray"&gt;
-    You can &lt;em&gt;not&lt;/em&gt; use Markdown in here.
-&lt;/div&gt;
+<div style="background-color: lightgray">
+    You can <em>not</em> use Markdown in here.
+</div>
 
 
 
@@ -384,14 +398,14 @@ To make a code block, indent four spaces:
     printf("goodbye world!");  /* his suicide note
                                   was in C */
 
-The text will be wrapped in `&lt;pre&gt;` and `&lt;code&gt;` tags, and the browser will display it in a monospaced typeface.  The first four spaces will be stripped off, but all other whitespace will be preserved.
+The text will be wrapped in `<pre>` and `<code>` tags, and the browser will display it in a monospaced typeface.  The first four spaces will be stripped off, but all other whitespace will be preserved.
 
 You cannot use Markdown or HTML within a code block, which makes them a convenient way to show samples of Markdown or HTML syntax:
 
-    &lt;blink&gt;
+    <blink>
        You would hate this if it weren't
        wrapped in a code block.
-    &lt;/blink&gt;
+    </blink>
 
 
 
@@ -402,9 +416,9 @@ Code Spans
 ==========
 
 
-You can make inline `&lt;code&gt;` tags by using code spans.  Use backticks to make a code span:
+You can make inline `<code>` tags by using code spans.  Use backticks to make a code span:
 
- Press the `&lt;Tab&gt;` key, then type a `$`.
+ Press the `<Tab>` key, then type a `$`.
 
 (The backtick key is in the upper left corner of most keyboards.)
 
@@ -412,5 +426,5 @@ Like code blocks, code spans will be displayed in a monospaced typeface.  Markdo
 
  Markdown italicizes things like this: `I *love* it.`
 
- Don't use the `&lt;font&gt;` tag; use CSS instead.
+ Don't use the `<font>` tag; use CSS instead.
 
