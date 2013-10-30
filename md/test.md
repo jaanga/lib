@@ -1,4 +1,46 @@
+# Test.md
+
 # Markdown text goes in here
+
+
+## Style in Div tag
+
+<div style="float:left;margin:60px;width:200px;" >
+<img src =http://www.w3schools.com/tags/img_pulpit.jpg/><br>
+<a href="./boilerplate/leap-threejs-boilerplate.html" ><b>Boilerplate</b></a><br>
+A starting-off point file that loads the Three.js and Leap libraries and creates a simple 3D display of hands and pointables. 
+</div>
+<div style="float:left;margin:60px;width:200px;" >
+<img src=http://www.w3schools.com/tags/img_pulpit.jpg /><br>
+<a href="./jest-live/r1/" ><b>jestLive</b></a><br>
+Real-time handiness.
+</div>
+<div style="float:left;margin:60px;width:200px;" >
+<img src=http://www.w3schools.com/tags/img_pulpit.jpg ><br>
+<a href="https://github.com/jaanga/gestification/tree/gh-pages/cookbook/jest-play" >j<b>estPlay</b></a><br>
+Record and replay Leap Motion JSON and BVH data capture. 
+Much effort here - Nearly ready for prime time.
+</div>
+
+## Figure & Figurecaption Tag
+
+<figure>
+<img src="http://www.w3schools.com/tags/img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
+<figcaption>Fig.1 - A view of the pulpit rock in Norway.</figcaption>
+</figure>
+
+<figure>
+  <img src="http://www.w3schools.com/tags/img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
+  <figcaption>Fig.1 - A view of the pulpit rock in Norway.</figcaption>
+</figure>
+
+## Details Tag
+
+<details>
+<summary>Copyright 1999-2011.</summary>
+<p> - by Refsnes Data. All Rights Reserved.</p>
+<p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+</details>
 
 ## Chapter 1
 
