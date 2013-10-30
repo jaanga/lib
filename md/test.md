@@ -6,7 +6,7 @@
 ## Style in Div tag
 
 <div style="float:left;margin:60px;width:200px;" >
-<img src =http://www.w3schools.com/tags/img_pulpit.jpg/><br>
+<img src =http://www.w3schools.com/tags/img_pulpit.jpg" /><br>
 <a href="./boilerplate/leap-threejs-boilerplate.html" ><b>Boilerplate</b></a><br>
 A starting-off point file that loads the Three.js and Leap libraries and creates a simple 3D display of hands and pointables. 
 </div>
@@ -22,6 +22,8 @@ Record and replay Leap Motion JSON and BVH data capture.
 Much effort here - Nearly ready for prime time.
 </div>
 
+GitHub ignores style atttributes in a `DIV` tag.
+
 ## Figure & Figurecaption Tag
 
 <figure>
@@ -34,6 +36,8 @@ Much effort here - Nearly ready for prime time.
   <figcaption>Fig.1 - A view of the pulpit rock in Norway.</figcaption>
 </figure>
 
+Block elements. Will nor display inline
+
 ## Details Tag
 
 <details>
@@ -41,6 +45,8 @@ Much effort here - Nearly ready for prime time.
 <p> - by Refsnes Data. All Rights Reserved.</p>
 <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
 </details>
+
+Does not display as desired in GitHub.
 
 ## Chapter 1
 
