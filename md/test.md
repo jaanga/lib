@@ -31,6 +31,11 @@ Markdown | Less | Pretty
 *Still* | `renders` | **nicely**  
 1 | 2 | 3  
 
+| img 1 | img 2 | img 3 |
+--- | --- |
+|<img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50> | <img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50>|
+|<img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50> | <img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50> |
+
 
 ## Links
 
@@ -103,9 +108,6 @@ Tables take the full width of the GitHub page by default - if they have a border
   </tr>
 </table>
 
-
-|<img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50>|<img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50>|
-|<img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50>|<img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50>
 
 ## Definition Lists
 
