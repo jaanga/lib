@@ -1,6 +1,63 @@
 # Test.md
 
 
+## `article` and `header` tags
+
+<article>
+  <header>
+    <h1>Internet Explorer 9</h1>
+    <p><time pubdate datetime="2011-03-15"></time></p>
+  </header>
+  <p>Windows Internet Explorer 9 (abbreviated as IE9) was released to
+  the  public on March 14, 2011 at 21:00 PDT.....</p>
+</article>
+
+
+
+## Output Tag
+
+This is kind of awesome. Not sure when I will use it...
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+<input type="range" id="a" value="50">100
++<input type="number" id="b" value="50">
+=<output name="x" for="a b"></output>
+</form>
+
+
+
+## Tables
+
+<table border="1">
+<caption>Important People</caption>
+  <tr>
+    <th>ID</th><th>Name</th><th>Rank</th><th>Image</th>
+  </tr>
+  <tr>
+    <td>1</td><td>Tom Preston-Werner</td><td>Awesome</td><td><img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50></td>
+  </tr>
+  <tr>
+    <td>2</td><td>Albert Einstein</td><td>Nearly as awesome</td><td>Image</td>
+  </tr>
+</table>
+
+
+
+## Definition Lists
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+
+## `INS` and `DEL` and `s` and `strike` tags
+
+Conceptualizing <ins>random endpoints in a access matrix provides</ins> reach extensions enterprise wide. 
+Respective divisions historically insignificant, <del>upscale trend lines in a management</del> inventory analysis survivability format.
+
+Iteration system wide <s>engenders economies of scale</s>, cross-media technology, <strike>presentation action items</strike> and life cycle replication.
 
 
 ## Style in Div tag
@@ -46,13 +103,18 @@ Block elements. Will nor display inline
 
 ## Details Tag
 
+Details do not display as desired in GitHub.
+
+
 <details>
 <summary>Copyright 1999-2011.</summary>
 <p> - by Refsnes Data. All Rights Reserved.</p>
 <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
 </details>
 
-Does not display as desired in GitHub.
+
+***
+
 
 ## Chapter 1
 
