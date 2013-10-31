@@ -9,6 +9,25 @@ Theo Armour ~ 2013-10-30
 
 -->
 
+## GitHum Image Gallery
+
+<table border=0 >
+<caption>Image Gallery</caption>
+  <tr valign=top >
+  <td  width=200><img src=http://www.w3schools.com/tags/img_pulpit.jpg width=240><br>
+      caption caption caption caption caption caption caption </td>
+    <td align=center width=200><img src=http://www.w3schools.com/tags/img_pulpit.jpg width=240><br>caption</td>
+    <td align=center width=200><img src=http://www.w3schools.com/tags/img_pulpit.jpg width=240><br>caption</td>
+  </tr>
+  <tr align=center >
+    <td>2</td>
+    <td>Albert Einstein</td>
+    <td>Nearly as awesome</td>
+  </tr>
+</table>
+
+
+
 ## GitHub Only
 
 - [ ] thing1
@@ -105,20 +124,6 @@ Tables take the full width of the GitHub page by default - if they have a border
   </tr>
   <tr>
     <td>2</td><td>Albert Einstein</td><td>Nearly as awesome</td><td>Image</td>
-  </tr>
-</table>
-
-<table border="" >
-<caption>Important People</caption>
-  <tr>
-    <td><img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50><br>caption</td>
-    <td><img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50><br>caption</td>
-    <td><img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50><br>caption</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Albert Einstein</td>
-    <td>Nearly as awesome</td>
   </tr>
 </table>
 
