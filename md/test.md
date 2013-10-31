@@ -9,12 +9,34 @@ Theo Armour ~ 2013-10-30
 
 -->
 
+## GitHub Only
+
+- [ ] thing1
+- [x] thing2
+
+
+
+Colons can be used to align columns.
+
+| Tables        | Are           | Cool  |  
+| ------------- |:-------------:| -----:|  
+| col 3 is      | right-aligned | $1600 |  
+| col 2 is      | centered      |   $12 |  
+| zebra stripes | are neat      |    $1 |  
+
+The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
+
+Markdown | Less | Pretty  
+--- | --- | ---  
+*Still* | `renders` | **nicely**  
+1 | 2 | 3  
 
 
 ## Links
 
-<https://help.github.com/articles/github-flavored-markdown>
-<http://daringfireball.net/projects/markdown/syntax>
+<https://help.github.com/articles/github-flavored-markdown>  
+<http://daringfireball.net/projects/markdown/syntax>  
+<https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet?
 
 ## `<a>` tags
 
@@ -82,6 +104,9 @@ Tables take the full width of the GitHub page by default - if they have a border
 </table>
 
 
+|<img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50>|<img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50>|
+|<img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50>|<img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50>
+
 ## Definition Lists
 
 Definition Lists appear as desired in GitHub. Titles are bolded.
@@ -103,6 +128,11 @@ Respective divisions historically insignificant, <del>upscale trend lines in a m
 `s` and `strike` tags do not appear as desired
 
 Iteration system wide <s>engenders economies of scale</s>, cross-media technology, <strike>presentation action items</strike> and life cycle replication.
+
+but `~~` works
+
+Marketing teams input produce cross purposing in view of goal alignments due to knowledge paucity, necessitating workflow education and orientation. Media sourcing as an acquisition strategy is counterproductive in a internet environment in virtual component methodology. Imaging through ideals rather than real world branding, is a perilous undertaking with negative results. 
+~~Branding strategies generating motion as activity without reproducible results is a ultimately futile effort if left in place.~~
 
 
 ## Style in Div tag
