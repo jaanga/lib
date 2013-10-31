@@ -32,9 +32,9 @@ Markdown | Less | Pretty
 1 | 2 | 3  
 
 | img 1 | img 2 | img 3 |
---- | --- |
-|<img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50> | <img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50>|
-|<img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50> | <img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50> |
+| --- | --- | --- |
+| <img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50> | <img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50>| yyy|
+|<img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50> | <img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50> | ggg |
 
 
 ## Links
@@ -107,6 +107,21 @@ Tables take the full width of the GitHub page by default - if they have a border
     <td>2</td><td>Albert Einstein</td><td>Nearly as awesome</td><td>Image</td>
   </tr>
 </table>
+
+<table border="" >
+<caption>Important People</caption>
+  <tr>
+    <td><img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50><br>caption</td>
+    <td><img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50><br>caption</td>
+    <td><img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50><br>caption</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Albert Einstein</td>
+    <td>Nearly as awesome</td>
+  </tr>
+</table>
+
 
 
 ## Definition Lists
