@@ -1,14 +1,24 @@
 # Test.md
 
+_Exploring Markdown on GitHub..._
 <!--
 
 Markdown supports HTML comments
 
+Theo Armour ~ 2013-10-30
 
 -->
 
+
+
+## Links
+
+<https://help.github.com/articles/github-flavored-markdown>
+<http://daringfireball.net/projects/markdown/syntax>
+
 ## `<a>` tags
 
+JavaScript in an anchor tag does not seem to be supported by GitHub.
 
 <a href=# onclick=alert('hi') >Alert?</a>
 
