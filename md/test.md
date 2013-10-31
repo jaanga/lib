@@ -1,5 +1,17 @@
 # Test.md
 
+<!--
+
+Markdown supports HTML comments
+
+
+-->
+
+## `<a>` tags
+
+
+<a href=# onclick=alert('hi') >Alert?</a>
+
 
 ## `article` and `header` tags
 
@@ -14,11 +26,14 @@
 
 
 
-## Output Tag
+## Form and Output Tag
 
-This is kind of awesome. Not sure when I will use it...
+The `output` tag feature is kind of awesome. Not sure when I will use it...
 
-<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+Forms do not appear in GitHub.
+
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
 <input type="range" id="a" value="50">100
 +<input type="number" id="b" value="50">
 =<output name="x" for="a b"></output>
@@ -28,7 +43,7 @@ This is kind of awesome. Not sure when I will use it...
 
 ## Tables
 
-Tables take the full width of the GitHub page by default. They have a well-styled appearance
+Tables take the full width of the GitHub page by default - if they have a border > 0. Tables have a well-styled appearance
 
 <table border="1">
 <caption>Important People</caption>
