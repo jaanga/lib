@@ -28,6 +28,8 @@ This is kind of awesome. Not sure when I will use it...
 
 ## Tables
 
+Tables take the full width of the GitHub page by default. They have a well-styled appearance
+
 <table border="1">
 <caption>Important People</caption>
   <tr>
@@ -41,9 +43,23 @@ This is kind of awesome. Not sure when I will use it...
   </tr>
 </table>
 
+<table border="0">
+<caption>Important People ~ border = 0</caption>
+  <tr>
+    <th>ID</th><th>Name</th><th>Rank</th><th>Image</th>
+  </tr>
+  <tr>
+    <td>1</td><td>Tom Preston-Werner</td><td>Awesome</td><td><img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50></td>
+  </tr>
+  <tr>
+    <td>2</td><td>Albert Einstein</td><td>Nearly as awesome</td><td>Image</td>
+  </tr>
+</table>
 
 
 ## Definition Lists
+
+Definition Lists appear as desired in GitHub. Titles are bolded.
 
 <dl>
   <dt>Coffee</dt>
@@ -52,10 +68,14 @@ This is kind of awesome. Not sure when I will use it...
   <dd>White cold drink</dd>
 </dl>
 
-## `INS` and `DEL` and `s` and `strike` tags
+## `ins` and `del` and `s` and `strike` tags
+
+`ins` and `del` appear in GitHub
 
 Conceptualizing <ins>random endpoints in a access matrix provides</ins> reach extensions enterprise wide. 
 Respective divisions historically insignificant, <del>upscale trend lines in a management</del> inventory analysis survivability format.
+
+`s` and `strike` tags do not appear as desired
 
 Iteration system wide <s>engenders economies of scale</s>, cross-media technology, <strike>presentation action items</strike> and life cycle replication.
 
