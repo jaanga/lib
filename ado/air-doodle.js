@@ -47,7 +47,7 @@
 
 		light.shadowCameraNear = 1500;
 		light.shadowCameraFar = 2500;
-		light.shadowCameraVisible = true;
+//		light.shadowCameraVisible = true;
 		scene.add( light );		
 
 		loader = new THREE.JSONLoader();
