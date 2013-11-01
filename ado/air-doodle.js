@@ -7,11 +7,13 @@
 		
 		doodle = document.body.appendChild( document.createElement( 'div' ) );
 		doodle.style.cssText = 'bottom: 0; font: 600 12pt monospace; left: 0; margin: auto; position: absolute; right: 0; text-align: center; width: 50% ';
-		doodle.innerHTML = '<p title="This feature requires a Leap Motion device.">This page has ' +
-		'<a href="http://jaanga.github.io/gestification/projects/air-doodle/" target="_blank">airDoodle</a></p>';
-		
-		//data = document.body.appendChild( document.createElement( 'div' ) );
-		//data.style.cssText = 'bottom: 50px; left: 0; margin: auto; position: absolute; right: 0; text-align: center; width: 50% ';
+		if ( window.innerHeight > 500 ) {
+			doodle.innerHTML = '<p title="This feature requires a Leap Motion device.">This page has ' +
+			'<a href="http://jaanga.github.io/gestification/projects/air-doodle/" target="_blank">airDoodle</a></p>';
+// for testing			
+//			data = document.body.appendChild( document.createElement( 'div' ) );
+//			data.style.cssText = 'bottom: 50px; left: 0; margin: auto; position: absolute; right: 0; text-align: center; width: 50% ';
+		}
 		
 		ADO.scene = scene = new THREE.Scene();
 		if ( ! Detector.webgl ) {
@@ -29,15 +31,15 @@
 		controls.target.set( 0, 100, 0 );
 
 // Lights
-		light = new THREE.AmbientLight( 0x888888 );
+		light = new THREE.AmbientLight( 0xaaaaaa );
 		scene.add( light );
 
- 		light = new THREE.DirectionalLight( 0xffffff, 1 );
+ 		light = new THREE.DirectionalLight( 0xffffff, 2 );
 		light.position.set( 0, 2000, 0 );
 		light.castShadow = true;
-		light.shadowMapWidth = light.shadowMaHeight = 1024;
+		light.shadowMapWidth = light.shadowMapHeight = 1024;
 
-		var d = 300;
+		var d = 330;
 		light.shadowCameraLeft = -d;
 		light.shadowCameraRight = d;
 		light.shadowCameraTop = d;
@@ -45,14 +47,14 @@
 
 		light.shadowCameraNear = 1500;
 		light.shadowCameraFar = 2500;
-//		light.shadowCameraVisible = true;
+		light.shadowCameraVisible = true;
 		scene.add( light );		
 
 		loader = new THREE.JSONLoader();
 		loader.load( fname, function ( geometry, materials ) {
 			ADO.airDoodle = airDoodle = new THREE.Mesh( geometry, new THREE.MeshFaceMaterial( materials ) );
 			airDoodle.castShadow = true;
-			//airDoodle.receiveShadow = true;
+			airDoodle.receiveShadow = true;
 			airDoodle.visible = false;
 			airDoodle.scale.set( 100, 100, 100 )
 			scene.add( airDoodle );	
@@ -70,7 +72,7 @@
 //			data.innerHTML = 'Hand X:' + hand.stabilizedPalmPosition[0].toFixed(0) + ' Y:' +  hand.stabilizedPalmPosition[1].toFixed(0) + ' Z:' + hand.stabilizedPalmPosition[2].toFixed(0) + '<br>' +
 //				airDoodle.visible + ' ' + airDoodle.position.x + ' '  + airDoodle.position.y + ' '  + airDoodle.position.z + ' ' 
 //			'';
-		} else {
+		} else if ( !!airDoodle ) {
 			airDoodle.visible = false;
 		}
 	});	
