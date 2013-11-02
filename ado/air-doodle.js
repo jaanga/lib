@@ -5,10 +5,10 @@
 		var light, loader, material, geometry, mesh
 		var doodle, data, airDoodle;
 		
-		doodle = document.body.appendChild( document.createElement( 'div' ) );
-		doodle.style.cssText = 'bottom: 0; font: 600 12pt monospace; left: 0; margin: auto; position: absolute; right: 0; text-align: center; width: 50% ';
+		ADO.doodle = document.body.appendChild( document.createElement( 'div' ) );
+		ADO.doodle.style.cssText = 'bottom: 0; font: 600 12pt monospace; left: 0; margin: auto; position: absolute; right: 0; text-align: center; width: 50% ';
 		if ( window.innerHeight > 500 ) {
-			doodle.innerHTML = '<p title="This feature requires a Leap Motion device.">This page has ' +
+			ADO.doodle.innerHTML = '<p title="This feature requires a Leap Motion device.">This page has ' +
 			'<a href="http://jaanga.github.io/gestification/projects/air-doodle/" target="_blank">airDoodle</a></p>';
 // for testing			
 //			data = document.body.appendChild( document.createElement( 'div' ) );
@@ -58,10 +58,20 @@
 			airDoodle.visible = false;
 			airDoodle.scale.set( 100, 100, 100 )
 			scene.add( airDoodle );	
+			ADO.showDoodle = true;
 			animate();
 		} );	
 	}
 
+	function toggleAirDoodle() {
+		if ( ADO.showDoodle  === true ) {
+			ADO.showDoodle = false;
+		} else {
+			ADO.showDoodle = true;
+			animate();
+		}
+	}
+	
 	Leap.loop( function( frame ) {
 		var hand, airDoodle = ADO.airDoodle;	
 		if ( frame.hands.length > 0) {	
@@ -78,7 +88,9 @@
 	});	
 	
 	function animate() {
-		requestAnimationFrame( animate );
-		ADO.controls.update();
-		ADO.renderer.render( ADO.scene, ADO.camera );
+		if ( ADO.showDoodle ) {
+			requestAnimationFrame( animate );
+			ADO.controls.update();
+			ADO.renderer.render( ADO.scene, ADO.camera );
+		}
 	}	

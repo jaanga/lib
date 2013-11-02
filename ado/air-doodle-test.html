@@ -7,18 +7,14 @@
 </head>
 <body>
 <script>
-		
+
 	document.body.style.cssText = 'font: bold 12pt monospace; margin: 0; overflow: hidden;';
 	
 	var info = document.body.appendChild( document.createElement( 'div' ) );
-	info.style.cssText = 'left: 10px; margin: 0 30px 0 0; position: absolute; max-width: 900px; ';
-	info.innerHTML = '<h1>airDoodle</h1>' +
-		
-		'<p>AirDoodle</p>' +
-		'<ul>' +
-		'<li>The future of meta-communication Wright in the palm of your hand</li>' +
-		'</ul>' +
-		
+	info.style.cssText = 'left: 20%; margin: 0 auto; position: absolute; right: 20%; top: 0; width: 60%; ';
+	info.innerHTML = info.txt = '<h1>airDoodle</h1>' +
+		'<p><a href=# onclick=toggleAirDoodle(); >toggle AirDoodle</a></p>' +
+		'<div id=data></div>' +
 	'';
 
 </script>

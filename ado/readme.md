@@ -1,6 +1,8 @@
 airDoodle
 =========
 
+Live Demo: [airDoodle](http://jaanga.github.io/libs/ado/air-doodle-test.html)
+
 ### Copyright, License and Credits
 copyright &copy; 2013 Jaanga authors ~ MIT License
 

@@ -6,8 +6,16 @@ _Exploring Markdown on GitHub..._
 Markdown supports HTML comments
 
 Theo Armour ~ 2013-10-30
-
 -->
+
+![Valid XHTML] (http://w3.org/Icons/valid-xhtml10)
+
+ 
+![Valid XHTML][pic]
+  
+[pic]: http://w3.org/Icons/valid-xhtml10 "howdy"  
+
+
 
 ## GitHub Image Gallery
 
@@ -59,7 +67,7 @@ Markdown | Less | Pretty
 
 <https://help.github.com/articles/github-flavored-markdown>  
 <http://daringfireball.net/projects/markdown/syntax>  
-<https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet?
+<https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet?>  
 
 ## `<a>` tags
 
