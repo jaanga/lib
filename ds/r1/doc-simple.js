@@ -17,7 +17,7 @@
 	DS.horzRdm = 'left: 25%; margin: auto; right: 20%; ';
 	DS.horzLnk = 'right: 0; width: 18%; ';
 
-	DS.height = ' height: ' + (window.innerHeight * 0.40) + 'px;';
+	DS.height = ' height: ' + (window.innerHeight * 0.45) + 'px;';
 	DS.heightFull = ' height: ' + (window.innerHeight * 0.90) + 'px;';
 
 	DS.top1 = ' top: ' + (window.innerHeight * 0.05) + 'px;';
