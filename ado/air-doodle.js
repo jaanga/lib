@@ -1,6 +1,6 @@
 	var ADO = ADO || {}
 	
-	function init( fname ) {
+	ADO.init = function ( fname ) {
 		var scene, renderer, camera, controls;
 		var light, loader, material, geometry, mesh
 		var doodle, data, airDoodle;
@@ -59,18 +59,26 @@
 			airDoodle.scale.set( 100, 100, 100 )
 			scene.add( airDoodle );	
 			ADO.showDoodle = true;
-			animate();
+			ADO.animate();
 		} );	
-	}
+	};
 
-	function toggleAirDoodle() {
+	ADO.animate = function () {
+		if ( ADO.showDoodle ) {
+			requestAnimationFrame( ADO.animate );
+			ADO.controls.update();
+			ADO.renderer.render( ADO.scene, ADO.camera );
+		}
+	};
+	
+	ADO.toggleAirDoodle = function () {
 		if ( ADO.showDoodle  === true ) {
 			ADO.showDoodle = false;
 		} else {
 			ADO.showDoodle = true;
-			animate();
+			ADO.animate();
 		}
-	}
+	};
 	
 	Leap.loop( function( frame ) {
 		var hand, airDoodle = ADO.airDoodle;	
@@ -87,10 +95,4 @@
 		}
 	});	
 	
-	function animate() {
-		if ( ADO.showDoodle ) {
-			requestAnimationFrame( animate );
-			ADO.controls.update();
-			ADO.renderer.render( ADO.scene, ADO.camera );
-		}
-	}	
+	
