@@ -1,5 +1,5 @@
 	var DS = DS || {};
-	var ADO = ADO || {};  // airDoodle
+	var ADO = ADO || {};  // so airDoodle comapitble
 
 	DS.css = document.body.appendChild( document.createElement('style') );
 	DS.css.innerHTML = 'body { font: bold 12pt monospace; margin: 0; overflow: hidden; }' +
@@ -17,7 +17,8 @@
 	DS.horzRdm = 'left: 25%; margin: auto; right: 20%; ';
 	DS.horzLnk = 'right: 0; width: 18%; ';
 
-	DS.height = ' height: ' + (window.innerHeight * 0.40) + 'px;';
+	DS.height1 = ' height: ' + (window.innerHeight * 0.45) + 'px;';
+	DS.height2 = ' height: ' + (window.innerHeight * 0.40) + 'px;';
 	DS.heightFull = ' height: ' + (window.innerHeight * 0.90) + 'px;';
 
 	DS.top1 = ' top: ' + (window.innerHeight * 0.05) + 'px;';
@@ -30,12 +31,12 @@
 	DS.watermarkStyle = 'font-size:120pt;opacity:0.08; text-align:center;transform:rotate(7deg);-webkit-transform:rotate(-10deg);';
 	DS.ifrWatermark.innerHTML = 'Working<br>Sample';		
 	
-	DS.ifr = document.body.appendChild( document.createElement( 'iframe' ) );
-	DS.ifrStyle = DS.basic + DS.height + DS.top1 + DS.horzIfr;
+	DS.ifr = document.body.appendChild( document.createElement( 'iframe' ) ); // puur after watermark - so appears in front of watarmerk
+	DS.ifrStyle = DS.basic + DS.height1 + DS.top1 + DS.horzIfr;
 
 	DS.readme = document.body.appendChild( document.createElement( 'div' ) );
 	DS.readmeStyleFull = DS.basic + DS.heightFull + DS.top1 + DS.horzRdm;
-	DS.readmeStyle = DS.basic + DS.height + DS.top2 + DS.horzRdm;
+	DS.readmeStyle = DS.basic + DS.height2 + DS.top2 + DS.horzRdm;
 
 	DS.runApp = document.body.appendChild( document.createElement( 'div' ) );
 	DS.runApp.style.cssText = DS.position + DS.top1 + DS.horzLnk;
