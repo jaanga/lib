@@ -4,7 +4,7 @@ A very simple way for accessing apps and browsing source code on GitHub
 
 ### Live Demo
 
-[docSimple R1](http://jaanga.github.io/lib/ds/doc-simple-test.html)
+[docSimple R1](http://jaanga.github.io/libs/ds/doc-simple-test.html)
 
 ### Copyright, License and Credits
 copyright &copy; 2013 Jaanga authors ~ MIT License
