@@ -26,12 +26,12 @@
 	DS.menu = document.body.appendChild( document.createElement( 'div' ) );
 	DS.menu.style.cssText = DS.basic + DS.heightFull + DS.horzMnu + DS.top1;
 
-	DS.ifr = document.body.appendChild( document.createElement( 'iframe' ) );
-	DS.ifrStyle = DS.basic + DS.height + DS.top1 + DS.horzIfr;
-	
 	DS.ifrWatermark = document.body.appendChild( document.createElement( 'div' ) );
 	DS.watermarkStyle = 'font-size:120pt;opacity:0.08; text-align:center;transform:rotate(7deg);-webkit-transform:rotate(-10deg);';
-	DS.ifrWatermark.innerHTML = 'Working<br>Sample';	
+	DS.ifrWatermark.innerHTML = 'Working<br>Sample';		
+	
+	DS.ifr = document.body.appendChild( document.createElement( 'iframe' ) );
+	DS.ifrStyle = DS.basic + DS.height + DS.top1 + DS.horzIfr;
 
 	DS.readme = document.body.appendChild( document.createElement( 'div' ) );
 	DS.readmeStyleFull = DS.basic + DS.heightFull + DS.top1 + DS.horzRdm;
