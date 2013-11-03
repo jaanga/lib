@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang=en>
+<head>
+<title>Projects Gestification Jaanga</title>
+<meta charset=utf-8>
+<meta name=author content='Theo Armour'>
+</head>
+<body>
+<script src=http://jaanga.github.io/libs/md/showdown.js ></script>
+<!--
+<script src=http://js.leapmotion.com/0.2.2/leap.min.js ></script>
+<script src=http://mrdoob.github.com/three.js/examples/js/Detector.js ></script>
+<script src=http://mrdoob.github.com/three.js/build/three.min.js ></script>
+<script src=http://mrdoob.github.com/three.js/examples/js/controls/TrackballControls.js > </script>
+<script src=http://jaanga.github.io/libs/ado/air-doodle.js ></script>
+
+<script src=../../libs/ado/r1air-doodle.js ></script>
+-->
+<script src='r1/doc-simple.js' ></script>
+
+	<div id=txt >
+	
+	<h1>
+		<a href="" >Projects</a>
+	</h1>
+			
+	<p id=rm >
+		<a href=JavaScript:displayPage("readme.md",rm); >Project Read Me on GitHub</a>
+	</p>
+		
+	<p>
+		This folder contains work of a more ongoing and complex nature.
+	</p>	
+			
+	<p id=ab>
+		<a href=JavaScript:displayOverview("test-folder-abc","/index.html",ab); >Test Folder ABC</a><br>
+		Iteration system wide engenders economies of scale, cross-media technology, presentation action items and life cycle replication.
+	</p>
+
+	<p id=de>
+		<a href=JavaScript:displayOverview("test-folder-def","/index.html",de); >Test Folder DEF</a><br>
+		Marketing teams input produce cross purposing in view of goal alignments due to knowledge paucity, necessitating workflow education and orientation. Media sourcing as an acquisition strategy is counterproductive in a internet environment in virtual component methodology. Imaging through ideals rather than real world branding, is a perilous undertaking with negative results. Branding strategies generating motion as activity without reproducible results is a ultimately futile effort if left in place.
+	</p>
+
+	</div>		
+
+<script>
+
+/*
+
+	DS.menu.innerHTML = 
+		'<h1>' +
+			'<a href="" >Projects</a>' +
+		'</h1>' +
+		
+		'<p id=rm ><a href=JavaScript:displayPage("readme.md",rm); >Project Read Me on GitHub</a></p>' +
+	
+		'<p>This folder contains work of a more ongoing and complex nature.</p>' +	
+		
+		'<p id=ab><a href=JavaScript:displayOverview("test-folder-abc","/index.html",ab); >Test Folder ABC</a><br>' +
+			'Iteration system wide engenders economies of scale, cross-media technology, presentation action items and life cycle replication.' +
+		'</p>' +
+
+		'<p id=de><a href=JavaScript:displayOverview("test-folder-def","/index.html",de); >Test Folder DEF</a><br>' +
+			'Marketing teams input produce cross purposing in view of goal alignments due to knowledge paucity, necessitating workflow education and orientation. Media sourcing as an acquisition strategy is counterproductive in a internet environment in virtual component methodology. Imaging through ideals rather than real world branding, is a perilous undertaking with negative results. Branding strategies generating motion as activity without reproducible results is a ultimately futile effort if left in place.' +
+		'</p>' +
+		
+	'';
+*/
+
+	DS.menu.innerHTML = txt.innerHTML;
+	txt.innerHTML = '';
+	DS.init( 'readme.md', rm );
+	
+</script>
+</body>
+</html>

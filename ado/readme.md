@@ -4,7 +4,7 @@ The future of meta-communication
 
 ### Live Demo
 
-[airDoodle](http://jaanga.github.io/libs/ado/air-doodle-test.html)
+[airDoodle R1](http://jaanga.github.io/libs/ado/r1/air-doodle-test.html)
 
 ### References
 
