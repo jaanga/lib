@@ -4,7 +4,7 @@ A JavaScript port of Markdown
 
 ## Note
 
-  > **Please note** that I, [Corey](https://github.com/coreyti), am not the author
+  > **Please note** that I, [Corey](https://github.com/coreyti/showdown), am not the author
   > of Showdown. Rather, I found it some time back at <http://attacklab.net/showdown/>
   > (website removed, see: <http://wayback.archive.org/web/*/http://attacklab.net/showdown>)
   > and wanted to see it available on GitHub.

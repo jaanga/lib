@@ -15,10 +15,18 @@ The title of the app follows a commonly used JavaScript notation standard that u
 Thus the title of the library is docSimple. Of course if used in a title or at the beginning of a sentence the initial letter may be uppercase. 
 
 ### Copyright, License and Credits
-copyright &copy; 2013 Jaanga authors ~ All work herein is under the [MIT License](http://jaanga.github.io/libs/jaanga-copyright-and-mit-license.md)
+Copyright &copy; 2013 Jaanga authors
+
+All work herein is available under the MIT License.  
+
+For details see [Jaanga Copyright and License](http://jaanga.github.io/libs/jaanga-copyright-and-mit-license.md)
 
 
 ### Change Log
+
+2013-11-04 ~ Theo
+
+* Update copyright notice
 
 2013-11-03 ~ Theo
 

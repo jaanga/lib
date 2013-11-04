@@ -44,36 +44,62 @@
 	DS.viewSource = document.body.appendChild( document.createElement( 'div' ) );
 	DS.viewSource.style.cssText = DS.position + DS.top2 + DS.horzLnk;
 
-	DS.init = function( fname, id) {
+	DS.init = function( folder,fname, id) {
 		if ( !location.hash ) {
-			displayPage( fname, id );
+			displayPage( folder, fname, id );
 		} else {
+	
 			var str = location.hash.split('#');
+console.log( str );				
 			if ( str.length < 4 ) {
-				displayPage( str[1], null )  // add id's...
+				displayApp( str[1], str[2], null )  // add id's...
 			} else {
-				displayOverview( str[1], str[2], null )
+				displayApp( str[1], str[2], null )
 			}
 		}
 	};
 	
-	function displayPage( fname, element ) {
+	function displayPage( folder, fname, element ) {
 		DS.ifrWatermark.style.cssText = DS.ifr.style.cssText = 'display: none;';
 
 		DS.readme.innerHTML = DS.converter.makeHtml( requestFile( fname ) );
 		DS.readme.style.cssText = DS.readmeStyleFull;
-
-		//DS.runApp.innerHTML = '<h2><a href="https://github.com/jaanga/gestification/tree/gh-pages/cookbook" target="_blank">' +
-		//	'View<br>Cookbook<br>source code<br> on GitHub<br>in <br> new tab</a></h2>';
 			
-		DS.runApp.innerHTML = '<h2>&#x261A;<br><a href="https://github.com/jaanga/gestification/" target="_blank">' +
-		'View<br><i>' + fname + '</i><br>source code<br> on GitHub<br>in <br> new tab</a></h2>';
+		DS.runApp.innerHTML = ''; 
 		
-		DS.viewSource.innerHTML = '';
+		DS.viewSource.innerHTML = '<h2>&#x261A;<br><a href="https://github.com/jaanga/gestification/blob/gh-pages/' + folder + '/' + fname +'" target="_blank">' +
+		'View<br><i>' + fname + '</i><br>as<br>source code<br>on GitHub<br>in <br> new tab</a></h2>';
 
 		clearMenuHighlights( element );
 
 		location.hash = fname + '#';
+
+		if ( ADO.doodle ) {
+			ADO.doodle.style.display = 'block';
+			ADO.showDoodle = true;
+			ADO.animate();
+		}
+	}
+
+	function displayApp( folder, fname, element ) {
+		DS.ifrWatermark.style.cssText = DS.ifr.style.cssText = 'display: none;';
+
+		DS.readme.innerHTML = DS.converter.makeHtml( requestFile( folder + '/' +  fname ) );
+		DS.readme.style.cssText = DS.readmeStyleFull;
+			
+		DS.runApp.innerHTML = ''; 
+		
+		DS.runApp.innerHTML = '<h2>&#x261A;<br>Run<br><a href="' + folder + '/index.html" ><i>'  + folder.substr(0, 1).toUpperCase() + folder.substr(1) + 
+		'</i><br>as a<br>Jaanga app</a></h2>';
+		
+		DS.viewSource.innerHTML = '<h2>&#x261A;<br><a href="https://github.com/jaanga/gestification/blob/gh-pages/' + folder + '/' + fname +'" target="_blank">' +
+		'View<br><i>' + folder.substr(0, 1).toUpperCase() + folder.substr(1) + '<br>' +
+		fname + '<br>' +
+		'</i>as<br>source code<br>on GitHub<br>in <br> new tab</a></h2>';
+
+		clearMenuHighlights( element );
+
+		location.hash = folder + '#' + fname + '#';
 
 		if ( ADO.doodle ) {
 			ADO.doodle.style.display = 'block';
@@ -89,17 +115,12 @@
 
 		DS.readme.innerHTML = DS.converter.makeHtml( requestFile( folder + '/readme.md' ) );
 		DS.readme.style.cssText = DS.readmeStyle;
-
-		// DS.runApp.innerHTML = '<h2><a href="' + folder + fname + '" target="_blank">Run<br>HTML app<br>in<br>new tab</a></h2>';
 		
-		DS.runApp.innerHTML = '<h2>&#x261A;<br><a href="' + folder + '/index.html" >Open<br><i>'  + folder.substr(0, 1).toUpperCase() + folder.substr(1) + 
-			'</i><br>viewer/browser<br>HTML app</a></h2>';
+		DS.runApp.innerHTML = '<h2>&#x261A;<br>Run<br><a href="' + folder + '/index.html" ><i>'  + folder.substr(0, 1).toUpperCase() + folder.substr(1) + 
+			'</i><br>as a<br>Jaanga app</a></h2>';
 			
-		// DS.viewSource.innerHTML = '<h2><a href="https://github.com/jaanga/gestification/tree/gh-pages/cookbook/' + folder + '" target="_blank">' +
-		//	'View<br> source code<br> on GitHub<br>in <br> new tab</a></h2>';
-			
-		DS.viewSource.innerHTML = '<h2>&#x261A;<br><a href="https://github.com/jaanga/gestification/tree/gh-pages/' + folder +
-			'/" target="_blank">View<br><i>' + folder.substr(0, 1).toUpperCase() + folder.substr(1) +  '</i><br>source code<br> on GitHub<br>in <br> new tab</a></h2>';
+		DS.viewSource.innerHTML = '<h2>&#x261A;<br><a href="https://github.com/jaanga/gestification/tree/gh-pages/' + folder + '/" target="_blank">' +
+		'View<br><i>' + folder.substr(0, 1).toUpperCase() + folder.substr(1) +  '</i><br>as<br>source code<br>on GitHub<br>in <br> new tab</a></h2>';
 			
 		clearMenuHighlights( element );
 
