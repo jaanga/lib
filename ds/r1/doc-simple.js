@@ -50,7 +50,7 @@
 		} else {
 	
 			var str = location.hash.split('#');
-console.log( str );				
+// console.log( str );				
 			if ( str.length < 4 ) {
 				displayApp( str[1], str[2], null )  // add id's...
 			} else {
@@ -67,7 +67,7 @@ console.log( str );
 			
 		DS.runApp.innerHTML = ''; 
 		
-		DS.viewSource.innerHTML = '<h2>&#x261A;<br><a href="https://github.com/jaanga/gestification/blob/gh-pages/' + folder + '/' + fname +'" target="_blank">' +
+		DS.viewSource.innerHTML = '<h2>&#x261A;<br><a href="https://github.com/jaanga/gestification/blob/gh-pages/' + folder + '/index.html" target="_blank">' +
 		'View<br><i>' + fname + '</i><br>as<br>source code<br>on GitHub<br>in <br> new tab</a></h2>';
 
 		clearMenuHighlights( element );
@@ -89,7 +89,7 @@ console.log( str );
 			
 		DS.runApp.innerHTML = ''; 
 		
-		DS.runApp.innerHTML = '<h2>&#x261A;<br>Run<br><a href="' + folder + '/index.html" ><i>'  + folder.substr(0, 1).toUpperCase() + folder.substr(1) + 
+		DS.runApp.innerHTML = '<h2>&#x261A;<br>Run<br><a href="' + folder + '/index.html' + '" ><i>'  + folder.substr(0, 1).toUpperCase() + folder.substr(1) + 
 		'</i><br>as a<br>Jaanga app</a></h2>';
 		
 		DS.viewSource.innerHTML = '<h2>&#x261A;<br><a href="https://github.com/jaanga/gestification/blob/gh-pages/' + folder + '/' + fname +'" target="_blank">' +
@@ -116,7 +116,7 @@ console.log( str );
 		DS.readme.innerHTML = DS.converter.makeHtml( requestFile( folder + '/readme.md' ) );
 		DS.readme.style.cssText = DS.readmeStyle;
 		
-		DS.runApp.innerHTML = '<h2>&#x261A;<br>Run<br><a href="' + folder + '/index.html" ><i>'  + folder.substr(0, 1).toUpperCase() + folder.substr(1) + 
+		DS.runApp.innerHTML = '<h2>&#x261A;<br>Run<br><a href="' + folder + '/' + fname + '" ><i>'  + folder.substr(0, 1).toUpperCase() + folder.substr(1) + 
 			'</i><br>as a<br>Jaanga app</a></h2>';
 			
 		DS.viewSource.innerHTML = '<h2>&#x261A;<br><a href="https://github.com/jaanga/gestification/tree/gh-pages/' + folder + '/" target="_blank">' +
