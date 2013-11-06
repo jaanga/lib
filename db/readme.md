@@ -6,7 +6,7 @@ DocSimple.js ia a very simple and very small library for browsing Markdown files
 
 ### Live Demo
 
-[docBrowser R2](http://jaanga.github.io/libs/db/doc-broswer-prototype.html)
+[docBrowser R2](http://jaanga.github.io/libs/db/doc-browser-prototype.html)
 
 ### Notes
 
