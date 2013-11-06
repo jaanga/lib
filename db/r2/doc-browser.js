@@ -31,35 +31,36 @@
 	
 	DS.readme.appendChild( DS.editButton );
 	
-	DS.init = function( fname, id) {
+	DS.init = function( base, fname, id) {
+		DS.base = base;
 		if ( !location.hash ) {
-			displayPage('readme.md', intro );
+			DS.displayMarkdown('readme.md', intro );
 		} else {
-			displayPage( location.hash.substr(1), null );
+			DS.displayMarkdown( location.hash.substr(1), null );
 		}
 	};
 	
 	
-	function displayPage( fname, element ) {
+	DS.displayMarkdown = function( fname, element ) {
 	
-		DS.readme.innerHTML = DS.converter.makeHtml( requestFile( fname ) );
+		DS.readme.innerHTML = DS.converter.makeHtml( DS.requestFile( fname ) );
 		
-		DS.editButton.innerHTML = '<a href="https://github.com/jaanga/libs/blob/gh-pages/db/' + fname + 
+		DS.editButton.innerHTML = '<a href="' + DS.base + fname + 
 		'" onmouseover=this.style.opacity=1; style=color:#fff;text-decoration:none;	>' +
 		'Edit this page</a>';
 		
 		DS.readme.appendChild( DS.editButton );
 		
-		clearMenuHighlights( element );
+		DS.clearMenuHighlights( element );
 
 		if ( element === intro ) {
 			history.pushState('', document.title, window.location.pathname);
 		} else {
 			location.hash = fname ;
 		}	
-	}
+	};
 
-	function clearMenuHighlights( element ) {
+	DS.clearMenuHighlights = function( element ) {
 	
 		var tit = DS.menu.getElementsByTagName('h1');
 		DS.title.innerHTML = tit[0].innerHTML;
@@ -70,12 +71,12 @@
 			paragraphs[i].style.backgroundColor='';
 		}
 		if ( !!element ) element.style.backgroundColor='#edd';
-	}
+	};
 
-	function requestFile( fname ) {
+	DS.requestFile = function( fname ) {
 		var xmlHttp = null;
 		xmlHttp = new XMLHttpRequest();
 		xmlHttp.open( 'GET', fname, false );
 		xmlHttp.send( null );
 		return xmlHttp.responseText;
-	}
+	};
