@@ -44,7 +44,7 @@
 	
 		DS.readme.innerHTML = DS.converter.makeHtml( requestFile( fname ) );
 		
-		DS.editButton.innerHTML = '<a href="https://github.com/jaanga/libs/blob/gh-pages/' + fname + 
+		DS.editButton.innerHTML = '<a href="https://github.com/jaanga/libs/db/blob/gh-pages/' + fname + 
 		'" onmouseover=this.style.opacity=1; style=color:#fff;text-decoration:none;	>' +
 		'Edit this page</a>';
 		
