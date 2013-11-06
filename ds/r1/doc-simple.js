@@ -5,6 +5,10 @@
 	DS.css.innerHTML = 'body { font: bold 12pt monospace; margin: 0; overflow: hidden; }' +
 		'h1, h2, h3, p { margin: 10px 0px; padding: 0px 20px;  }' +
 		'p {padding: 5px 20px 5px 20px; }' +
+		'#button { 	position: fixed; top: 20px; right: 20px; padding: 8px; color: #fff;	background-color: #555;	opacity: 0.5;} ' +
+		'#button a { color: #fff; text-decoration: none; } ' +
+		'#button:hover { cursor: pointer; opacity: 1; }' +
+
 	'';	
 
 	DS.converter = new Showdown.converter();	
@@ -12,18 +16,21 @@
 	DS.basic = 'border: 3px double #eee; overflow-x: hidden; overflow-y: auto; position: absolute; ';
 	DS.position = 'position: absolute;';
 
-	DS.horzMnu = 'left: 0; width: 20%;';
-	DS.horzIfr = 'left: 25%; margin: auto; right: 20%; width: 55%;' ;
-	DS.horzRdm = 'left: 25%; margin: auto; right: 20%; ';
+	DS.horzMnu = 'left: 0; width: 23%;';
+	DS.horzIfr = 'left: 30%; margin: auto; right: 15%; width: 55%;' ;
+	DS.horzRdm = 'left: 30%; margin: auto; right: 15%; ';
 	DS.horzLnk = 'right: 0; width: 18%; ';
 
 	DS.height1 = ' height: ' + (window.innerHeight * 0.45) + 'px;';
 	DS.height2 = ' height: ' + (window.innerHeight * 0.40) + 'px;';
-	DS.heightFull = ' height: ' + (window.innerHeight * 0.90) + 'px;';
+	DS.heightFull = ' height: ' + (window.innerHeight * 0.88) + 'px;';
 
-	DS.top1 = ' top: ' + (window.innerHeight * 0.05) + 'px;';
-	DS.top2 = ' top: ' + (window.innerHeight * 0.55) + 'px;';
-
+	DS.top1 = ' top: ' + (window.innerHeight * 0.08) + 'px;';
+	DS.top2 = ' top: ' + (window.innerHeight * 0.58) + 'px;';
+	
+	DS.title = document.body.appendChild( document.createElement( 'h1' ) );
+	DS.title.style.cssText = 'left: 0; position: absolute; top: 2%;'
+	
 	DS.menu = document.body.appendChild( document.createElement( 'div' ) );
 	DS.menu.style.cssText = DS.basic + DS.heightFull + DS.horzMnu + DS.top1;
 
@@ -42,7 +49,8 @@
 	DS.runApp.style.cssText = DS.position + DS.top1 + DS.horzLnk;
 
 	DS.viewSource = document.body.appendChild( document.createElement( 'div' ) );
-	DS.viewSource.style.cssText = DS.position + DS.top2 + DS.horzLnk;
+	DS.viewSource.id = 'button';
+	DS.viewSource.style.cssText = 'right: 20%; position: absolute; top: 11%;';
 
 	DS.init = function( folder,fname, id) {
 		if ( !location.hash ) {
@@ -60,6 +68,8 @@
 	};
 	
 	function displayPage( folder, fname, element ) {
+
+	
 		DS.ifrWatermark.style.cssText = DS.ifr.style.cssText = 'display: none;';
 
 		DS.readme.innerHTML = DS.converter.makeHtml( requestFile( fname ) );
@@ -67,9 +77,11 @@
 			
 		DS.runApp.innerHTML = ''; 
 		
-		DS.viewSource.innerHTML = '<h2>&#x261A;<br><a href="https://github.com/jaanga/gestification/blob/gh-pages/' + folder + '/index.html" target="_blank">' +
-		'View<br><i>' + fname + '</i><br>as<br>source code<br>on GitHub<br>in <br> new tab</a></h2>';
+		//DS.viewSource.innerHTML = '<h2>&#x261A;<br><a href="https://github.com/jaanga/gestification/blob/gh-pages/' + folder + '/index.html" target="_blank">' +
+		//'View<br><i>' + fname + '</i><br>as<br>source code<br>on GitHub<br>in <br> new tab</a></h2>';
 
+		DS.viewSource.innerHTML = '<a href="https://github.com/jaanga/gestification/blob/gh-pages/' + folder + '/' + fname + '" target="_blank">Edit this text</a>';
+		
 		clearMenuHighlights( element );
 
 		location.hash = fname + '#';
@@ -82,23 +94,29 @@
 	}
 
 	function displayApp( folder, fname, element ) {
+
 		DS.ifrWatermark.style.cssText = DS.ifr.style.cssText = 'display: none;';
 
 		DS.readme.innerHTML = DS.converter.makeHtml( requestFile( folder + '/' +  fname ) );
 		DS.readme.style.cssText = DS.readmeStyleFull;
-			
-		DS.runApp.innerHTML = ''; 
 		
-		DS.runApp.innerHTML = '<h2>&#x261A;<br>Run<br><a href="' + folder + '/index.html' + '" ><i>'  + folder.substr(0, 1).toUpperCase() + folder.substr(1) + 
-		'</i><br>as a<br>Jaanga app</a></h2>';
+		//DS.runApp.innerHTML = '<h2>&#x261A;<br>Run<br><a href="' + folder + '/index.html' + '" ><i>'  + folder.substr(0, 1).toUpperCase() + folder.substr(1) + 
+		//'</i><br>as a<br>Jaanga app</a></h2>';
 		
-		DS.viewSource.innerHTML = '<h2>&#x261A;<br><a href="https://github.com/jaanga/gestification/blob/gh-pages/' + folder + '/' + fname +'" target="_blank">' +
-		'View<br><i>' + folder.substr(0, 1).toUpperCase() + folder.substr(1) + '<br>' +
-		fname + '<br>' +
-		'</i>as<br>source code<br>on GitHub<br>in <br> new tab</a></h2>';
+		//DS.viewSource.innerHTML = '<h2>&#x261A;<br><a href="https://github.com/jaanga/gestification/blob/gh-pages/' + folder + '/' + fname +'" target="_blank">' +
+		//'View<br><i>' + folder.substr(0, 1).toUpperCase() + folder.substr(1) + '<br>' +
+		//fname + '<br>' +
+		//'</i>as<br>source code<br>on GitHub<br>in <br> new tab</a></h2>';
+
+		//DS.viewSource.innerHTML = 'Edit this text';
+		
+		DS.viewSource.innerHTML = '<a href="https://github.com/jaanga/gestification/blob/gh-pages/' + folder + '/' + fname + '" target="_blank">Edit this text</a>';
 
 		clearMenuHighlights( element );
-
+		
+		// var titl = DS.menu.getElementsByTagName('h1');	
+		//DS.title.innerHTML = titl[0].innerHTML;
+		
 		location.hash = folder + '#' + fname + '#';
 
 		if ( ADO.doodle ) {
@@ -109,20 +127,30 @@
 	}
 	
 	function displayOverview( folder, fname, element) {
-		DS.ifr.src = folder + fname;
+
+		
+		DS.ifr.src = folder + '/' + fname;
 		DS.ifr.style.cssText = DS.ifrStyle;
 		DS.ifrWatermark.style.cssText  = DS.ifrStyle + DS.watermarkStyle;
 
 		DS.readme.innerHTML = DS.converter.makeHtml( requestFile( folder + '/readme.md' ) );
 		DS.readme.style.cssText = DS.readmeStyle;
 		
-		DS.runApp.innerHTML = '<h2>&#x261A;<br>Run<br><a href="' + folder + '/' + fname + '" ><i>'  + folder.substr(0, 1).toUpperCase() + folder.substr(1) + 
-			'</i><br>as a<br>Jaanga app</a></h2>';
+		//DS.runApp.innerHTML = '<h2>&#x261A;<br>Run<br><a href="' + folder + '/' + fname + '" ><i>'  + folder.substr(0, 1).toUpperCase() + folder.substr(1) + 
+		//	'</i><br>as a<br>Jaanga app</a></h2>';
 			
-		DS.viewSource.innerHTML = '<h2>&#x261A;<br><a href="https://github.com/jaanga/gestification/tree/gh-pages/' + folder + '/" target="_blank">' +
-		'View<br><i>' + folder.substr(0, 1).toUpperCase() + folder.substr(1) +  '</i><br>as<br>source code<br>on GitHub<br>in <br> new tab</a></h2>';
+		//DS.viewSource.innerHTML = '<h2>&#x261A;<br><a href="https://github.com/jaanga/gestification/tree/gh-pages/' + folder + '/" target="_blank">' +
+		//'View<br><i>' + folder.substr(0, 1).toUpperCase() + folder.substr(1) +  '</i><br>as<br>source code<br>on GitHub<br>in <br> new tab</a></h2>';
 			
+		DS.viewSource.innerHTML = '<a href="https://github.com/jaanga/gestification/blob/gh-pages/' + folder + '/' + fname + '" target="_blank">Edit this text</a>';
+
+		// DS.viewSource.innerHTML = 'Edit this text';
+		
 		clearMenuHighlights( element );
+		
+		var tit =  DS.menu.getElementsByTagName('h1');
+// console.log( 'do',  tit );		
+		DS.title.innerHTML = tit[0].innerHTML;		
 
 		location.hash = folder + '#' + fname + '#';
 
@@ -133,6 +161,10 @@
 	}
 
 	function clearMenuHighlights( element ) {
+		var tit = DS.menu.getElementsByTagName('h1');
+		DS.title.innerHTML = tit[0].innerHTML;
+		DS.menu.children[0].style.cssText= 'display:none;'
+		
 		var paragraphs = document.getElementsByTagName('p');
 		for (var i = 0, len = paragraphs.length; i < len; i++) {
 			paragraphs[i].style.backgroundColor='';
