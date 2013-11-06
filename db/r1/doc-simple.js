@@ -5,10 +5,6 @@
 	DS.css.innerHTML = 'body { font: bold 12pt monospace; margin: 0; overflow: hidden; }' +
 		'h1, h2, h3, p { margin: 10px 0px; padding: 0px 20px;  }' +
 		'p {padding: 5px 20px 5px 20px; }' +
-		'#button { 	position: fixed; top: 20px; right: 20px; padding: 8px; color: #fff;	background-color: #555;	opacity: 0.5;} ' +
-		'#button a { color: #fff; text-decoration: none; } ' +
-		'#button:hover { cursor: pointer; opacity: 1; }' +
-
 	'';	
 
 	DS.converter = new Showdown.converter();	
@@ -47,10 +43,9 @@
 
 	DS.runApp = document.body.appendChild( document.createElement( 'div' ) );
 	DS.runApp.style.cssText = DS.position + DS.top1 + DS.horzLnk;
-
-	DS.viewSource = document.body.appendChild( document.createElement( 'div' ) );
-	DS.viewSource.id = 'button';
-	DS.viewSource.style.cssText = 'right: 20%; position: absolute; top: 11%;';
+	
+	DS.editButton = document.body.appendChild( document.createElement( 'div' ) );
+	DS.editButton.style.cssText = 	'color: #fff;background-color: #555;	position: fixed; top: 8%; right: 20%; padding: 8px; opacity: 0.5;} ';
 
 	DS.init = function( folder,fname, id) {
 		if ( !location.hash ) {
@@ -69,7 +64,6 @@
 	
 	function displayPage( folder, fname, element ) {
 
-	
 		DS.ifrWatermark.style.cssText = DS.ifr.style.cssText = 'display: none;';
 
 		DS.readme.innerHTML = DS.converter.makeHtml( requestFile( fname ) );
@@ -77,14 +71,17 @@
 			
 		DS.runApp.innerHTML = ''; 
 		
-		//DS.viewSource.innerHTML = '<h2>&#x261A;<br><a href="https://github.com/jaanga/gestification/blob/gh-pages/' + folder + '/index.html" target="_blank">' +
-		//'View<br><i>' + fname + '</i><br>as<br>source code<br>on GitHub<br>in <br> new tab</a></h2>';
-
-		DS.viewSource.innerHTML = '<a href="https://github.com/jaanga/gestification/blob/gh-pages/' + folder + '/' + fname + '" target="_blank">Edit this text</a>';
+		DS.editButton.innerHTML = '<a href="https://github.com/jaanga/gestification/blob/gh-pages/' + folder + '/' + fname + 
+		'" onmouseover=this.style.opacity=1; style=color:#fff;text-decoration:none;	>' +
+		'Edit this page</a>';
 		
 		clearMenuHighlights( element );
 
-		location.hash = fname + '#';
+		if ( element === intro ) {
+			history.pushState('', document.title, window.location.pathname);
+		} else {
+			location.hash = fname ;
+		}		
 
 		if ( ADO.doodle ) {
 			ADO.doodle.style.display = 'block';
@@ -100,24 +97,13 @@
 		DS.readme.innerHTML = DS.converter.makeHtml( requestFile( folder + '/' +  fname ) );
 		DS.readme.style.cssText = DS.readmeStyleFull;
 		
-		//DS.runApp.innerHTML = '<h2>&#x261A;<br>Run<br><a href="' + folder + '/index.html' + '" ><i>'  + folder.substr(0, 1).toUpperCase() + folder.substr(1) + 
-		//'</i><br>as a<br>Jaanga app</a></h2>';
+		DS.editButton.innerHTML = '<a href="https://github.com/jaanga/gestification/blob/gh-pages/' + folder + '/' + fname + 
+		'" onmouseover=this.style.opacity=1; style=color:#fff;text-decoration:none;	>' +
+		'Edit this page</a>';
 		
-		//DS.viewSource.innerHTML = '<h2>&#x261A;<br><a href="https://github.com/jaanga/gestification/blob/gh-pages/' + folder + '/' + fname +'" target="_blank">' +
-		//'View<br><i>' + folder.substr(0, 1).toUpperCase() + folder.substr(1) + '<br>' +
-		//fname + '<br>' +
-		//'</i>as<br>source code<br>on GitHub<br>in <br> new tab</a></h2>';
-
-		//DS.viewSource.innerHTML = 'Edit this text';
-		
-		DS.viewSource.innerHTML = '<a href="https://github.com/jaanga/gestification/blob/gh-pages/' + folder + '/' + fname + '" target="_blank">Edit this text</a>';
-
 		clearMenuHighlights( element );
 		
-		// var titl = DS.menu.getElementsByTagName('h1');	
-		//DS.title.innerHTML = titl[0].innerHTML;
-		
-		location.hash = folder + '#' + fname + '#';
+		location.hash = folder + '#' + fname;
 
 		if ( ADO.doodle ) {
 			ADO.doodle.style.display = 'block';
@@ -128,7 +114,6 @@
 	
 	function displayOverview( folder, fname, element) {
 
-		
 		DS.ifr.src = folder + '/' + fname;
 		DS.ifr.style.cssText = DS.ifrStyle;
 		DS.ifrWatermark.style.cssText  = DS.ifrStyle + DS.watermarkStyle;
@@ -136,16 +121,10 @@
 		DS.readme.innerHTML = DS.converter.makeHtml( requestFile( folder + '/readme.md' ) );
 		DS.readme.style.cssText = DS.readmeStyle;
 		
-		//DS.runApp.innerHTML = '<h2>&#x261A;<br>Run<br><a href="' + folder + '/' + fname + '" ><i>'  + folder.substr(0, 1).toUpperCase() + folder.substr(1) + 
-		//	'</i><br>as a<br>Jaanga app</a></h2>';
-			
-		//DS.viewSource.innerHTML = '<h2>&#x261A;<br><a href="https://github.com/jaanga/gestification/tree/gh-pages/' + folder + '/" target="_blank">' +
-		//'View<br><i>' + folder.substr(0, 1).toUpperCase() + folder.substr(1) +  '</i><br>as<br>source code<br>on GitHub<br>in <br> new tab</a></h2>';
-			
-		DS.viewSource.innerHTML = '<a href="https://github.com/jaanga/gestification/blob/gh-pages/' + folder + '/' + fname + '" target="_blank">Edit this text</a>';
-
-		// DS.viewSource.innerHTML = 'Edit this text';
-		
+		DS.editButton.innerHTML = '<a href="https://github.com/jaanga/gestification/blob/gh-pages/' + folder + '/' + fname + 
+		'" onmouseover=this.style.opacity=1; style=color:#fff;text-decoration:none;	>' +
+		'Edit this page</a>';
+				
 		clearMenuHighlights( element );
 		
 		var tit =  DS.menu.getElementsByTagName('h1');

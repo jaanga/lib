@@ -1,12 +1,12 @@
-docSimple.js Read Me
+docDrowser.js Read Me
 =====================
-DocSimple.js ia a very simple and very small library for accessing and running HTML apps and browsing source code on GitHub
+DocSimple.js ia a very simple and very small library for browsing Markdown files on GitHub
 
 * Comptible with airDoodle 
 
 ### Live Demo
 
-[docSimple R1](http://jaanga.github.io/libs/ds/doc-simple-prototype.html)
+[docBrowser R2](http://jaanga.github.io/libs/ds/doc-broswer-prototype.html)
 
 ### Notes
 
@@ -23,6 +23,12 @@ For details see [Jaanga Copyright and License](http://jaanga.github.io/libs/jaan
 
 
 ### Change Log
+
+2013-11-06 ~ Theo
+
+* Changed name from docSimple to docBrowser - more secific
+* Greatly simplified the functionality
+
 
 2013-11-04 ~ Theo
 
