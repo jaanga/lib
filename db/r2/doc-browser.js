@@ -33,10 +33,11 @@
 	
 	DS.init = function( base, fname, id) {
 		DS.base = base;
+		DS.intro = id;
 		if ( !location.hash ) {
-			DS.displayMarkdown('readme.md', intro );
+			DS.displayMarkdown( fname, id );
 		} else {
-			DS.displayMarkdown( location.hash.substr(1), null );
+			DS.displayMarkdown( location.hash.substr(1), id );
 		}
 	};
 	
@@ -53,7 +54,7 @@
 		
 		DS.clearMenuHighlights( element );
 
-		if ( element === intro ) {
+		if ( element === DS.intro ) {
 			history.pushState('', document.title, window.location.pathname);
 		} else {
 			location.hash = fname ;
