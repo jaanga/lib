@@ -4,6 +4,7 @@
 	DS.css.innerHTML = 'body { font: bold 12pt monospace; margin: 0; overflow: hidden; }' +
 		'h1, h2, h3, p { margin: 10px 0px; padding: 0px 20px;  }' +
 		'p {padding: 5px 20px 5px 20px; }' +
+		'#githubio { display: block important!; }' +
 	'';	
 
 	DS.converter = new Showdown.converter();	
@@ -51,6 +52,7 @@
 		'Edit this page</a>';
 		
 		DS.readme.appendChild( DS.editButton );
+		DS.readme.children[2].style.cssText = 'display:block;'
 		
 		DS.clearMenuHighlights( element );
 
