@@ -1,8 +1,8 @@
-docDrowser.js Read Me
+docBrowser.js Read Me
 =====================
-DocSimple.js ia a very simple and very small library for browsing Markdown files on GitHub
+docBrowser.js is a very simple and very small library for browsing Markdown files on GitHub
 
-* Comptible with airDoodle 
+* Compatible with airDoodle 
 
 ### Live Demo
 
@@ -10,9 +10,9 @@ DocSimple.js ia a very simple and very small library for browsing Markdown files
 
 ### Notes
 
-The title of the app follows a commonly used JavaScript notation standard that use camel case except that the first leter is lower case,
+The title of the app follows a commonly used JavaScript notation standard that use camel case except that the first letter is lower case,
 
-Thus the title of the library is docSimple. Of course if used in a title or at the beginning of a sentence the initial letter may be uppercase. 
+Thus the title of the library is docBrowser. Of course if used in a title or at the beginning of a sentence the initial letter may be uppercase. 
 
 ### Copyright, License and Credits
 Copyright &copy; 2013 Jaanga authors
@@ -26,7 +26,7 @@ For details see [Jaanga Copyright and License](http://jaanga.github.io/libs/jaan
 
 2013-11-06 ~ Theo
 
-* Changed name from docSimple to docBrowser - more secific
+* Changed name from docSimple to docBrowser - more specific
 * Greatly simplified the functionality
 
 
