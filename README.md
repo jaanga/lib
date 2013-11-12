@@ -2,8 +2,11 @@ Libs Read Me
 ============
 
 Files we use a lot...
-
+<http://jaanga.github.io/libs>
+and
 <https://github.com/jaanga/libs>
+
+
 ## airDoodle
 <https://github.com/jaanga/libs/tree/gh-pages/ado>
 
