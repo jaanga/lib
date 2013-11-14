@@ -37,7 +37,7 @@ Thus the title of the library is docBrowser. Of course if used in a title or at 
 
 ## Help Files
 
-<http://github.com/jaanga/libs/md/showdown-test.html>
+<http://jaanga.github.io/libs/md/showdown-test.html>
 
 ### Copyright, License and Credits
 Copyright &copy; 2013 Jaanga authors
