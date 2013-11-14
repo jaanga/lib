@@ -1,6 +1,11 @@
 docBrowser.js Read Me
 =====================
-docBrowser.js is a very simple and very small library for browsing Markdown files on GitHub
+
+## Concept
+docBrowser.js is a very simple and very small library for browsing Markdown files on GitHub.
+
+A guiding precept is: 'Write once. Read many.' 
+In this case meaning the ability to view files in a well-formatted fashion in either a GitHub source code repository or available as a GitHub-hosted web-page.
 
 * Compatible with airDoodle 
 
@@ -24,7 +29,7 @@ The Three.js documentation app has the following features:
 
 This code used here has evolved away from the original. It has the title of docBrowser.
 
-It has the following features
+docBrowser has the following features
 
 * All data designated to appear in the content frames is assumed to be in Markdown format - which is interpreted at run-time and displayed as HTML.
 * Tha app loads data via an `XMLhttpRequest` and display that data in a `div`. Thus the app is constricted (or enhanced) by the usual CORS issues.
@@ -48,6 +53,10 @@ For details see [Jaanga Copyright and License](http://jaanga.github.io/libs/jaan
 
 
 ### Change Log
+
+2013-11-14 ~ Theo
+
+* Additions to read me
 
 2013-11-06 ~ Theo
 
