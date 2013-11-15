@@ -37,11 +37,22 @@ _Use `<` and `>` to make bare links clickable_
 
 ## `iframe`
 
-<iframe>iframes will not appear in github.com but comments will</iframe>
+    <iframe>iframes will not appear in github.com but these text comments will.</iframe>
+	
+<iframe>iframes will not appear in github.com but these text comments will.</iframe>
 
 ## Show on github.com but not github.io
 
+    <scan style=display:none >The quick brown fox jumps over the lazy dog.</scan>
+	
 <scan style=display:none >The quick brown fox jumps over the lazy dog.</scan>
+
+
+## Show on github.io but not github.com
+
+    <button>hi there</button>
+	
+<button>hi there</button>
 
 ## Table for a GitHub Image Gallery 
 _Following built with standard HTML table_  
@@ -128,6 +139,7 @@ Markdown | Less | Pretty
 _JavaScript in an anchor tag does not seem to be supported by GitHub._
 
 <a href='' onclick=alert('hi') >Alert?</a>
+
 
 
 ## `ins` and `del` and `s` and `strike` tags
