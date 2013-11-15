@@ -50,9 +50,9 @@ _Use `<` and `>` to make bare links clickable_
 
 ## Show on github.io but not github.com
 
-    <button>hi there</button>
+    <textarea>hi there</textarea>
 	
-<button>hi there</button>
+<textarea>hi there</textarea>
 
 ## Table for a GitHub Image Gallery 
 _Following built with standard HTML table_  
