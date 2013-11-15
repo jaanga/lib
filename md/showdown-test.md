@@ -3,7 +3,7 @@ showdown-test.md
 
 _Exploring Markdown on GitHub..._
 
-Code hosted on GitHub: [showdow-test.html]( http://jaanga.github.io/libs/db/showdown-test.html )
+Code hosted on GitHub: [showdow-test.html]( http://jaanga.github.io/libs/db/showdown-test.html )  
 Source code on GitHub: [showdown-test.md]( https://github.com/jaanga/libs/blob/gh-pages/md/test.md )
 
 <!--
@@ -26,6 +26,7 @@ Theo Armour ~ 2013-10-30
 
 ## Table for a GitHub Image Gallery 
 _built with standard HTML table_
+_Looks like tables on Github always have a border - but not bad looking._
 
 <table border=0 >
   <tr valign=top >
@@ -73,9 +74,9 @@ Tables take the full width of the GitHub page by default - if they have a border
 
 
 
-## Additional Markdown Features dor Tables Found on GitHub Only
+## Additional Markdown Features for Tables Found on GitHub Only
 
-_Clickable checkboxes_
+_Clickable checkboxes - or maybe not..._
 - [ ] thing1
 - [x] thing2
 
@@ -102,8 +103,10 @@ Markdown | Less | Pretty
 |<img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50> | <img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50> | ggg |
 
 
-## Links
-_using '<' and '\>' to make links clickable_   
+## Links / Bare URLs
+
+_Use `<` and `>` to make bare links clickable_   
+
 <https://help.github.com/articles/github-flavored-markdown>  
 <http://daringfireball.net/projects/markdown/syntax>  
 <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet?>  
@@ -112,50 +115,7 @@ _using '<' and '\>' to make links clickable_
 
 _JavaScript in an anchor tag does not seem to be supported by GitHub._
 
-<a href=# onclick=alert('hi') >Alert?</a>
-
-
-## `article` and `header` tags
-
-<article>
-  <header>
-    <h1>Internet Explorer 9</h1>
-    <p><time pubdate datetime="2011-03-15"></time></p>
-  </header>
-  <p>Windows Internet Explorer 9 (abbreviated as IE9) was released to
-  the  public on March 14, 2011 at 21:00 PDT.....</p>
-</article>
-
-
-
-## Form and Output Tag
-
-The `output` tag feature is kind of awesome. Not sure when I will use it...
-
-Forms do not appear in GitHub.
-
-
-<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-<input type="range" id="a" value="50">100
-+<input type="number" id="b" value="50">
-=<output name="x" for="a b"></output>
-</form>
-
-
-
-
-
-## Definition Lists
-
-Definition Lists appear as desired in GitHub. Titles are bolded.
-
-<dl>
-  <dt>Coffee</dt>
-  <dd>Black hot drink</dd>
-  <dt>Milk</dt>
-  <dd>White cold drink</dd>
-</dl>
-
+<a href='' onclick=alert('hi') >Alert?</a>
 
 
 ## `ins` and `del` and `s` and `strike` tags
@@ -176,34 +136,46 @@ Marketing teams input produce cross purposing in view of goal alignments due to 
 
 
 
-## Style in `Div` tag
+## Form and Output Tag
 
-GitHub ignores style atttributes in a `DIV` tag.
+Forms do not appear at all in GitHub.
 
+The `output` tag feature is kind of awesome. Not sure when I will use it...
 
-<div style="float:left;margin:60px;width:200px;" >
-	<img src=http://www.w3schools.com/tags/img_pulpit.jpg /><br>
-	<a href="./boilerplate/leap-threejs-boilerplate.html" ><b>Boilerplate</b></a><br>
-	A starting-off point file that loads the Three.js and Leap libraries and creates a simple 3D display of hands and pointables. 
-	</div>
-	<div style="float:left;margin:60px;width:200px;" >
-	<img src=http://www.w3schools.com/tags/img_pulpit.jpg /><br>
-	<a href="./jest-live/r1/" ><b>jestLive</b></a><br>
-	Real-time handiness.
-	</div>
-	<div style="float:left;margin:60px;width:200px;" >
-	<img src=http://www.w3schools.com/tags/img_pulpit.jpg ><br>
-	<a href="https://github.com/jaanga/gestification/tree/gh-pages/cookbook/jest-play" >j<b>estPlay</b></a><br>
-	Record and replay Leap Motion JSON and BVH data capture. 
-	Much effort here - Nearly ready for prime time.
-</div>
-
-<br style=clear:both;>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+<input type="range" id="a" value="50">100
++<input type="number" id="b" value="50">
+=<output name="x" for="a b"></output>
+</form>
 
 
+## `article` and `header` tags
 
-## `Figure` & `Figurecaption` Tag
+<article>
+  <header>
+    <h1>Internet Explorer 9</h1>
+    <p><time pubdate datetime="2011-03-15"></time></p>
+  </header>
+  <p>Windows Internet Explorer 9 (abbreviated as IE9) was released to
+  the  public on March 14, 2011 at 21:00 PDT.....</p>
+</article>
 
+## Definition Lists
+
+_Definition Lists appear as desired in GitHub. Titles are bolded._
+
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+
+
+
+## `Figure` & `Figurecaption` Tags
+
+_It looks like `Figure` & `Figurecaption` Tags are ignored by GitHub._
 
 <figure>
 <img src="http://www.w3schools.com/tags/img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
@@ -218,8 +190,7 @@ GitHub ignores style atttributes in a `DIV` tag.
 
 ## 'Details' Tag
 
-Details do not display as desired in GitHub.
-
+_Details do not display as desired in GitHub._
 
 <details>
 <summary>Copyright 1999-2011.</summary>
@@ -227,9 +198,40 @@ Details do not display as desired in GitHub.
 <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
 </details>
 
+
+
+## Style in `Div` tag
+
+_GitHub ignores style atttributes in a `DIV` tag._
+
+
+<div style="float:left;margin:60px;width:200px;" >
+	<img src=http://www.w3schools.com/tags/img_pulpit.jpg /><br>
+	<a href="./boilerplate/leap-threejs-boilerplate.html" ><b>Boilerplate</b></a><br>
+	A starting-off point file that loads the Three.js and Leap libraries and creates a simple 3D display of hands and pointables. 
+</div>
+
+<div style="float:left;margin:60px;width:200px;" >
+	<img src=http://www.w3schools.com/tags/img_pulpit.jpg /><br>
+	<a href="./jest-live/r1/" ><b>jestLive</b></a><br>
+	Real-time handiness.
+</div>
+<div style="float:left;margin:60px;width:200px;" >
+	<img src=http://www.w3schools.com/tags/img_pulpit.jpg ><br>
+	<a href="https://github.com/jaanga/gestification/tree/gh-pages/cookbook/jest-play" >j<b>estPlay</b></a><br>
+	Record and replay Leap Motion JSON and BVH data capture. 
+	Much effort here - Nearly ready for prime time.
+</div>
+
+<br style=clear:both;>
+
+
+
 ## CSS Issues
 
-Block elements. Will not display inline
+Block elements: will not display inline.
+
+
 
 
 ***
