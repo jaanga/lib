@@ -52,7 +52,7 @@ _Use `<` and `>` to make bare links clickable_
 
     <textarea>hi there</textarea>
 	
-<textarea>hi there</textarea>
+<input value="The quick brown fox jumps over the lazy dog." size=100 style=border-width:0; >
 
 ## Table for a GitHub Image Gallery 
 _Following built with standard HTML table_  
