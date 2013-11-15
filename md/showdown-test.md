@@ -13,6 +13,15 @@ Markdown supports HTML comments
 Theo Armour ~ 2013-10-30
 -->
 
+## Links / Bare URLs + Some Helpful Links
+
+_Use `<` and `>` to make bare links clickable_   
+
+<https://help.github.com/articles/github-flavored-markdown>  
+<http://daringfireball.net/projects/markdown/syntax>  
+<https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet?>  
+
+
 <!-- insert images two ways -->
 
 ![Valid XHTML] ( http://w3.org/Icons/valid-xhtml10 "With tooltips" )
@@ -25,8 +34,8 @@ Theo Armour ~ 2013-10-30
 
 
 ## Table for a GitHub Image Gallery 
-_built with standard HTML table_
-_Looks like tables on Github always have a border - but not bad looking._
+_Following built with standard HTML table_  
+_Looks like tables on Github always have a border - but not too bad looking._
 
 <table border=0 >
   <tr valign=top >
@@ -103,13 +112,6 @@ Markdown | Less | Pretty
 |<img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50> | <img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50> | ggg |
 
 
-## Links / Bare URLs
-
-_Use `<` and `>` to make bare links clickable_   
-
-<https://help.github.com/articles/github-flavored-markdown>  
-<http://daringfireball.net/projects/markdown/syntax>  
-<https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet?>  
 
 ## `<a>` Tags
 
