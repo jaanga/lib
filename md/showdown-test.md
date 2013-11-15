@@ -3,8 +3,12 @@ showdown-test.md
 
 _Exploring Markdown on GitHub..._
 
-Code hosted on GitHub: [showdow-test.html]( http://jaanga.github.io/libs/db/showdown-test.html )  
-Source code on GitHub: [showdown-test.md]( https://github.com/jaanga/libs/blob/gh-pages/md/test.md )
+## Links
+
+_Leave no space betwen right bracket and left parenthesis._  
+
+Code hosted on GitHub: [showdow-test.html]( http://jaanga.github.io/libs/db/showdown-test.html "link 1" )  
+Source code on GitHub: [showdown-test.md]( https://github.com/jaanga/libs/blob/gh-pages/md/test.md 'link 2' )
 
 <!--
 
@@ -31,7 +35,13 @@ _Use `<` and `>` to make bare links clickable_
   
 [pic]: http://w3.org/Icons/valid-xhtml10 "Howdy!"  
 
+## `iframe`
 
+<iframe>iframes will not appear in github.com but comments will</iframe>
+
+## Show on github.com but not github.io
+
+<scan style=display:none >The quick brown fox jumps over the lazy dog.</scan>
 
 ## Table for a GitHub Image Gallery 
 _Following built with standard HTML table_  
@@ -113,7 +123,7 @@ Markdown | Less | Pretty
 
 
 
-## `<a>` Tags
+## `a` Tags
 
 _JavaScript in an anchor tag does not seem to be supported by GitHub._
 
@@ -190,7 +200,7 @@ _It looks like `Figure` & `Figurecaption` Tags are ignored by GitHub._
 </figure>
 
 
-## 'Details' Tag
+## `Details` Tag
 
 _Details do not display as desired in GitHub._
 
