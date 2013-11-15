@@ -1,6 +1,11 @@
-# Test.md
+showdown-test.md
+==================
 
 _Exploring Markdown on GitHub..._
+
+Code hosted on GitHub: [showdow-test.html]( http://jaanga.github.io/libs/db/showdown-test.html )
+Source code on GitHub: [showdown-test.md]( https://github.com/jaanga/libs/blob/gh-pages/md/test.md )
+
 <!--
 
 Markdown supports HTML comments
@@ -8,16 +13,19 @@ Markdown supports HTML comments
 Theo Armour ~ 2013-10-30
 -->
 
-![Valid XHTML] (http://w3.org/Icons/valid-xhtml10)
+<!-- insert images two ways -->
+
+![Valid XHTML] ( http://w3.org/Icons/valid-xhtml10 "With tooltips" )
 
  
 ![Valid XHTML][pic]
   
-[pic]: http://w3.org/Icons/valid-xhtml10 "howdy"  
+[pic]: http://w3.org/Icons/valid-xhtml10 "Howdy!"  
 
 
 
-## GitHub Image Gallery
+## Table for a GitHub Image Gallery 
+_built with standard HTML table_
 
 <table border=0 >
   <tr valign=top >
@@ -33,16 +41,47 @@ Theo Armour ~ 2013-10-30
   </tr>
 </table>
 
+## More Tables
+
+Tables take the full width of the GitHub page by default - if they have a border > 0. Tables have a well-styled appearance
+
+<table border="1">
+<caption>Important People</caption>
+  <tr>
+    <th>ID</th><th>Name</th><th>Rank</th><th>Image</th>
+  </tr>
+  <tr>
+    <td>1</td><td>Tom Preston-Werner</td><td>Awesome</td><td><img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50></td>
+  </tr>
+  <tr>
+    <td>2</td><td>Albert Einstein</td><td>Nearly as awesome</td><td>Image</td>
+  </tr>
+</table>
+
+<table border="0">
+<caption>Important People ~ border = 0</caption>
+  <tr>
+    <th>ID</th><th>Name</th><th>Rank</th><th>Image</th>
+  </tr>
+  <tr>
+    <td>1</td><td>Tom Preston-Werner</td><td>Awesome</td><td><img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50></td>
+  </tr>
+  <tr>
+    <td>2</td><td>Albert Einstein</td><td>Nearly as awesome</td><td>Image</td>
+  </tr>
+</table>
 
 
-## GitHub Only
 
+## Additional Markdown Features dor Tables Found on GitHub Only
+
+_Clickable checkboxes_
 - [ ] thing1
 - [x] thing2
 
 
-
-Colons can be used to align columns.
+_Very easy ways of building HTML tables_
+_Colons can be used to align columns._
 
 | Tables        | Are           | Cool  |  
 | ------------- |:-------------:| -----:|  
@@ -64,14 +103,14 @@ Markdown | Less | Pretty
 
 
 ## Links
-
+_using '<' and '\>' to make links clickable_   
 <https://help.github.com/articles/github-flavored-markdown>  
 <http://daringfireball.net/projects/markdown/syntax>  
 <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet?>  
 
-## `<a>` tags
+## `<a>` Tags
 
-JavaScript in an anchor tag does not seem to be supported by GitHub.
+_JavaScript in an anchor tag does not seem to be supported by GitHub._
 
 <a href=# onclick=alert('hi') >Alert?</a>
 
@@ -104,36 +143,6 @@ Forms do not appear in GitHub.
 
 
 
-## Tables
-
-Tables take the full width of the GitHub page by default - if they have a border > 0. Tables have a well-styled appearance
-
-<table border="1">
-<caption>Important People</caption>
-  <tr>
-    <th>ID</th><th>Name</th><th>Rank</th><th>Image</th>
-  </tr>
-  <tr>
-    <td>1</td><td>Tom Preston-Werner</td><td>Awesome</td><td><img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50></td>
-  </tr>
-  <tr>
-    <td>2</td><td>Albert Einstein</td><td>Nearly as awesome</td><td>Image</td>
-  </tr>
-</table>
-
-<table border="0">
-<caption>Important People ~ border = 0</caption>
-  <tr>
-    <th>ID</th><th>Name</th><th>Rank</th><th>Image</th>
-  </tr>
-  <tr>
-    <td>1</td><td>Tom Preston-Werner</td><td>Awesome</td><td><img src=http://www.w3schools.com/tags/img_pulpit.jpg width=50></td>
-  </tr>
-  <tr>
-    <td>2</td><td>Albert Einstein</td><td>Nearly as awesome</td><td>Image</td>
-  </tr>
-</table>
-
 
 
 ## Definition Lists
@@ -146,6 +155,8 @@ Definition Lists appear as desired in GitHub. Titles are bolded.
   <dt>Milk</dt>
   <dd>White cold drink</dd>
 </dl>
+
+
 
 ## `ins` and `del` and `s` and `strike` tags
 
@@ -164,33 +175,34 @@ Marketing teams input produce cross purposing in view of goal alignments due to 
 ~~Branding strategies generating motion as activity without reproducible results is a ultimately futile effort if left in place.~~
 
 
-## Style in Div tag
+
+## Style in `Div` tag
 
 GitHub ignores style atttributes in a `DIV` tag.
 
 
 <div style="float:left;margin:60px;width:200px;" >
-<img src=http://www.w3schools.com/tags/img_pulpit.jpg /><br>
-<a href="./boilerplate/leap-threejs-boilerplate.html" ><b>Boilerplate</b></a><br>
-A starting-off point file that loads the Three.js and Leap libraries and creates a simple 3D display of hands and pointables. 
-</div>
-<div style="float:left;margin:60px;width:200px;" >
-<img src=http://www.w3schools.com/tags/img_pulpit.jpg /><br>
-<a href="./jest-live/r1/" ><b>jestLive</b></a><br>
-Real-time handiness.
-</div>
-<div style="float:left;margin:60px;width:200px;" >
-<img src=http://www.w3schools.com/tags/img_pulpit.jpg ><br>
-<a href="https://github.com/jaanga/gestification/tree/gh-pages/cookbook/jest-play" >j<b>estPlay</b></a><br>
-Record and replay Leap Motion JSON and BVH data capture. 
-Much effort here - Nearly ready for prime time.
+	<img src=http://www.w3schools.com/tags/img_pulpit.jpg /><br>
+	<a href="./boilerplate/leap-threejs-boilerplate.html" ><b>Boilerplate</b></a><br>
+	A starting-off point file that loads the Three.js and Leap libraries and creates a simple 3D display of hands and pointables. 
+	</div>
+	<div style="float:left;margin:60px;width:200px;" >
+	<img src=http://www.w3schools.com/tags/img_pulpit.jpg /><br>
+	<a href="./jest-live/r1/" ><b>jestLive</b></a><br>
+	Real-time handiness.
+	</div>
+	<div style="float:left;margin:60px;width:200px;" >
+	<img src=http://www.w3schools.com/tags/img_pulpit.jpg ><br>
+	<a href="https://github.com/jaanga/gestification/tree/gh-pages/cookbook/jest-play" >j<b>estPlay</b></a><br>
+	Record and replay Leap Motion JSON and BVH data capture. 
+	Much effort here - Nearly ready for prime time.
 </div>
 
 <br style=clear:both;>
 
 
 
-## Figure & Figurecaption Tag
+## `Figure` & `Figurecaption` Tag
 
 
 <figure>
@@ -203,9 +215,8 @@ Much effort here - Nearly ready for prime time.
   <figcaption>Fig.1 - A view of the pulpit rock in Norway.</figcaption>
 </figure>
 
-Block elements. Will nor display inline
 
-## Details Tag
+## 'Details' Tag
 
 Details do not display as desired in GitHub.
 
@@ -216,23 +227,10 @@ Details do not display as desired in GitHub.
 <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
 </details>
 
+## CSS Issues
 
-***
+Block elements. Will not display inline
 
-
-## Chapter 1
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-et dolore magna aliqua. 
-
-## Chapter 2
-
-[http://google.com](http://google.com)
-
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.
 
 ***
 
@@ -246,8 +244,6 @@ This is an overview of Markdown's syntax.  For more information, visit the [Mark
 
  [Markdown web site]:
    http://daringfireball.net/projects/markdown/
-
-
 
 
 

@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang=en>
 <head>
-<title></title>
+<title>Showdown Test</title>
 <meta charset=utf-8>
 <meta name=author content='Theo Armour'>
 </head>
 <body>
 <script src=http://jaanga.github.io/libs/md/showdown.js ></script>
 <script>
-// https://github.com/coreyti/showdown
+// Thanks to  https://github.com/coreyti/showdown
 
 	document.body.style.cssText = ' font: 400 12pt sans-serif; ';
 	
@@ -21,12 +21,11 @@
 	var textarea = document.body.appendChild( document.createElement( 'textarea' ) );
 	textarea.style.cssText = 'height: ' + (window.innerHeight - 100) + 'px; width: 40%; ';
 
-	
 	var converter = new Showdown.converter(); // cannot seem to load extensions
 	var output = document.body.appendChild( document.createElement( 'div' ) );
 	output.style.cssText = 'left: 50%; position: absolute; top: 50px; width: 45%; ';		
 				
-	convertFile( 'test.md');
+	convertFile( 'showdown-test.md');
 	
 	function requestFile( fname ) {
 		var xmlHttp = null;
