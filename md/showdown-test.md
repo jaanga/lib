@@ -43,16 +43,16 @@ _Use `<` and `>` to make bare links clickable_
 
 ## Show on github.com but not github.io
 
-    <scan style=display:none >The quick brown fox jumps over the lazy dog.</scan>
+    <scan style=display:none >If you see this text twice you are on github.com.</scan>
 	
-<scan style=display:none >The quick brown fox jumps over the lazy dog.</scan>
+<scan style=display:none >If you see this text twice you are on github.com.</scan>
 
 
 ## Show on github.io but not github.com
 
-    <textarea>hi there</textarea>
+    <input value="If you see this text twice you are on github.io." size=100 style=border-width:0; >
 	
-<input value="The quick brown fox jumps over the lazy dog." size=100 style=border-width:0; >
+<input value="If you see this text twice you are on github.io." size=100 style=border-width:0; >
 
 ## Table for a GitHub Image Gallery 
 _Following built with standard HTML table_  
