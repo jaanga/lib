@@ -43,16 +43,16 @@ _Use `<` and `>` to make bare links clickable_
 
 ## Show on github.com but not github.io
 
-    <scan style=display:none >If you see this text twice you are on github.com.</scan>
+    <scan style=display:none >If you see this text twice, you are probably at github.com.</scan>
 	
-<scan style=display:none >If you see this text twice you are on github.com.</scan>
+Repeated text here: <scan style=display:none >If you see this text twice, you are probably at github.com.</scan>
 
 
 ## Show on github.io but not github.com
 
-    <input value="If you see this text twice you are on github.io." size=100 style=border-width:0; >
+    <input value="If you see this text twice, you are probably at github.io." size=100 style=border-width:0; >
 	
-<input value="If you see this text twice you are on github.io." size=100 style=border-width:0; >
+Repeated text here: <input value="If you see this text twice, you are probably at github.io." size=70 style=border-width:0;font-size:12pt; >
 
 ## Table for a GitHub Image Gallery 
 _Following built with standard HTML table_  
