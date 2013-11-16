@@ -16,10 +16,11 @@
 
 	DS.height = ' height: ' + (window.innerHeight * 0.88) + 'px;';
 
-	DS.top = ' top: ' + (window.innerHeight * 0.08) + 'px;';
+	//DS.top = ' top: ' + (window.innerHeight * 0.08) + 'px;';
+	DS.top = ' top: 50px;';
 	
 	DS.title = document.body.appendChild( document.createElement( 'h1' ) );
-	DS.title.style.cssText = 'left: 0; position: absolute; top: 2%;'
+	DS.title.style.cssText = 'left: 0; position: absolute; top: 10px;'
 	
 	DS.menu = document.body.appendChild( document.createElement( 'div' ) );
 	DS.menu.style.cssText = DS.basic + DS.height + DS.horzMnu + DS.top;
