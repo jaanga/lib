@@ -12,7 +12,7 @@
 	DS.basic = 'border: 3px double #eee; overflow-x: hidden; overflow-y: auto; position: absolute; ';
 
 	DS.horzMnu = ' left: 0; width: 23%;';
-	DS.horzRdm = ' left: 28%; margin: auto; max-width:900px; ';
+	DS.horzRdm = ' left: 28%; margin auto: auto; max-width: 900px; min-width: 600px; right: 50px; ';
 
 	DS.height = ' height: ' + (window.innerHeight * 0.88) + 'px;';
 
