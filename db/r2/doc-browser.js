@@ -2,8 +2,8 @@
 
 	DS.css = document.body.appendChild( document.createElement('style') );
 	DS.css.innerHTML = 'body { font: bold 12pt monospace; margin: 0; overflow: hidden; }' +
-		'h1, h2, h3, p { margin: 10px 0px; padding: 0px 20px;  }' +
-		'p {padding: 5px 20px 5px 20px; }' +
+		'h1, h2, h3, p { margin: 10px 0px; padding: 0px 25px;  }' +
+		'p {padding: 5px 20px 5px 25px; }' +
 		'#githubio { display: block important!; }' +
 	'';	
 
@@ -11,16 +11,16 @@
 	
 	DS.basic = 'border: 3px double #eee; overflow-x: hidden; overflow-y: auto; position: absolute; ';
 
-	DS.horzMnu = 'left: 0; width: 23%;';
-	DS.horzRdm = 'left: 30%; margin: auto; right: 15%; ';
+	DS.horzMnu = ' left: 0; width: 23%;';
+	DS.horzRdm = ' left: 28%; margin: auto; max-width:900px; ';
 
 	DS.height = ' height: ' + (window.innerHeight * 0.88) + 'px;';
 
 	//DS.top = ' top: ' + (window.innerHeight * 0.08) + 'px;';
-	DS.top = ' top: 50px;';
+	DS.top = ' top: 60px;';
 	
 	DS.title = document.body.appendChild( document.createElement( 'h1' ) );
-	DS.title.style.cssText = 'left: 0; position: absolute; top: 10px;'
+	DS.title.style.cssText = ' left: 0; position: absolute; top: 10px;'
 	
 	DS.menu = document.body.appendChild( document.createElement( 'div' ) );
 	DS.menu.style.cssText = DS.basic + DS.height + DS.horzMnu + DS.top;
