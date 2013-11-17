@@ -6,14 +6,14 @@ docBrowser.js is a very simple and very small library for browsing Markdown file
 
 ## Objectives
 
-### Wanted
+_The following are some of the thoughts going on will this app and these web pages are being developed. Very much a work in rapid progress._
 
 ### Easy to enhance
-It must scream: tweak me till I twerkle.
+Create something that screams: 'tweak me till I twerkle.' 'Open up the hood, pick up your wrench and screwdriver, and take me apart.'
 
 
 ### Lots of interactive 3D
-If this is 'your 3D happy-place' then it better be dripping with luscuios interactive 3D
+If this is 'your 3D happy-place' then it better be dripping with luscious interactive 3D
 
 
 ### Lots of images and videos
@@ -37,7 +37,7 @@ Fully utilizes GitHub spirit/features
 Moving around is as easy as changing TV channels. You can go to the next channel by clicking. Like a multipane file tree viewer.
 
 You *do not* have have to go and return, go and return, go and return.
-Browse appa and code easily.
+Browse apps and code easily.
 Each screen shows images of the contents
 Handles folders and files
 
@@ -60,20 +60,20 @@ Make it really easy and really fast to look after and curate lots of projects an
 * Compatible with airDoodle 
 * Totally embraces the GitHub thing
 
-### Oriented towards programmers
+### Oriented toward programmers
 * Monospace font
 * Left justified
 * IDE-like feeling
 * Snarky attitude
 
 
-### Oriented towards Designers / Code is for dummies
+### Oriented toward Designers / Code is for dummies
 
 
 ### Easy to Maintain
 Lends itself to progressive improvements
 
-Ability to go through lots of files - one by one - and make incremental improvements that evolve as the inprovements are made and then can be easily carried0back to the previously enhanced files.
+Ability to go through lots of files - one by one - and make incremental improvements that evolve as the improvements are made and then can be easily carried0back to the previously enhanced files.
 - or putting it another way: nothing prevents the above from happening.
 
 
@@ -105,8 +105,8 @@ This code used here has evolved away from the original. It has the title of docB
 docBrowser has the following features
 
 * All data designated to appear in the content frames is assumed to be in Markdown format - which is interpreted at run-time and displayed as HTML.
-* Tha app loads data via an `XMLhttpRequest` and display that data in a `div`. Thus the app is constricted (or enhanced) by the usual CORS issues.
-* The Markdown files may contain imgages, iframes and many other cool things - and full HTML if wanted
+* The app loads data via an `XMLhttpRequest` and display that data in a `div`. Thus the app is constricted (or enhanced) by the usual CORS issues.
+* The Markdown files may contain images, iframes and many other cool things - and full HTML if wanted
 
 
 The title of the app follows a commonly used JavaScript notation standard that use camel case except that the first letter is lower case,
