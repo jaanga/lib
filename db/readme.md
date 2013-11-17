@@ -6,7 +6,7 @@ docBrowser.js is a very simple and very small library for browsing Markdown file
 
 ## Objectives
 
-_The following are some of the thoughts going on will this app and these web pages are being developed. Very much a work in rapid progress._
+_The following are some of the thoughts going on while this app and these web pages are being developed. This text is very much a work in rapid progress._
 
 ### Easy to enhance
 Create something that screams: 'tweak me till I twerkle.' 'Open up the hood, pick up your wrench and screwdriver, and take me apart.'
