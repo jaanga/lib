@@ -4,16 +4,89 @@ docBrowser.js Read Me
 ## Concept
 docBrowser.js is a very simple and very small library for browsing Markdown files on GitHub.
 
+## Objectives
+
+### Wanted
+
+### Easy to enhance
+It must scream: tweak me till I twerkle.
+
+
+### Lots of interactive 3D
+If this is 'your 3D happy-place' then it better be dripping with luscuios interactive 3D
+
+
+### Lots of images and videos
+Don't forget the Handicapped
+Not everybody has cutting edge technology
+
+
+### Apps are from Venus. Code is from Mars.
+two links for every repo - one for app view - one for source view
+
+html files are about using the apps
+moving around github is about looking at source code
+seamless transitions between viewing apps and viewing source
+
+
+### Embrace GitHub
+Fully utilizes GitHub spirit/features
+
+
+### Effortless Navigation
+Moving around is as easy as changing TV channels. You can go to the next channel by clicking. Like a multipane file tree viewer.
+
+You *do not* have have to go and return, go and return, go and return.
+Browse appa and code easily.
+Each screen shows images of the contents
+Handles folders and files
+
+
+### WORM revisited
+* Write once, read anywhere
 A guiding precept is: 'Write once. Read many.' 
+
+This has nothing to to with WORM drives. 
+
 In this case meaning the ability to view files in a well-formatted fashion in either a GitHub source code repository or available as a GitHub-hosted web-page.
 
-* Compatible with airDoodle 
 
-### Live Demo
+### Accept Quantity
+Make it really easy and really fast to look after and curate lots of projects and c=very simple to add new projects.
+
+
+### Compatibility
+* Markdown interpreter 
+* Compatible with airDoodle 
+* Totally embraces the GitHub thing
+
+### Oriented towards programmers
+* Monospace font
+* Left justified
+* IDE-like feeling
+* Snarky attitude
+
+
+### Oriented towards Designers / Code is for dummies
+
+
+### Easy to Maintain
+Lends itself to progressive improvements
+
+Ability to go through lots of files - one by one - and make incremental improvements that evolve as the inprovements are made and then can be easily carried0back to the previously enhanced files.
+- or putting it another way: nothing prevents the above from happening.
+
+
+### 100% JavaScript
+Use the ability of JavaScript to create and it HTML and CSS.
+Write with a single thought process
+
+
+## Live Demo
 
 [docBrowser R2](http://jaanga.github.io/libs/db/doc-browser-prototype.html)
 
-### Notes
+## Notes
 
 The ideas or concept for code used to display this document is sourced from the code used to display the documentation for Three.js - a JavaScript library for 3D visualizations such as the demo included in this document.
 
