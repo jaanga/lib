@@ -19,7 +19,7 @@
 		if ( ! Detector.webgl ) {
 			ADO.renderer = renderer = new THREE.CanvasRenderer( { antialias: true } );
 		} else {
-			ADO.renderer = renderer = new THREE.WebGLRenderer( { antialias: true } );
+			ADO.renderer = renderer = new THREE.WebGLRenderer( { alpha: 1, antialias: true, clearColor: 0xffffff } );
 		}
 		renderer.setSize( window.innerWidth, window.innerHeight );
 		renderer.shadowMapEnabled = true;
