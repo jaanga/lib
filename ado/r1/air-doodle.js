@@ -8,7 +8,7 @@
 		ADO.doodle = document.body.appendChild( document.createElement( 'div' ) );
 		ADO.doodle.style.cssText = 'bottom: 0; font: 600 12pt monospace; left: 0; margin: auto; position: absolute; right: 0; text-align: center; width: 50% ';
 		if ( window.innerHeight > 500 ) {
-			ADO.doodle.innerHTML = '<p title="This feature requires a Leap Motion device.">This page has ' +
+			ADO.doodle.innerHTML = '<p title="This feature requires a Leap Motion device.">This page has an ' +
 			'<a href="http://jaanga.github.io/gestification/projects/air-doodle/" target="_blank">airDoodle</a></p>';
 // for testing			
 //			data = document.body.appendChild( document.createElement( 'div' ) );
@@ -17,7 +17,7 @@
 		
 		ADO.scene = scene = new THREE.Scene();
 		if ( ! Detector.webgl ) {
-			ADO.renderer = renderer = new THREE.CanvasRenderer( { antialias: true } );
+			ADO.renderer = renderer = new THREE.CanvasRenderer();
 		} else {
 			ADO.renderer = renderer = new THREE.WebGLRenderer( { alpha: 1, antialias: true, clearColor: 0xffffff } );
 		}
