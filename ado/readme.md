@@ -4,7 +4,7 @@ The future of meta-communication
 
 ### Live Demo
 
-[airDoodle R1](http://jaanga.github.io/libs/ado/r1/air-doodle-test.html)
+[airDoodle R1]( http://jaanga.github.io/libs/ado/r1/index.html )
 
 ### References
 
@@ -14,6 +14,14 @@ The future of meta-communication
 copyright &copy; 2013 Jaanga authors ~ MIT License
 
 ###Change Log
+
+2013-12-22 ~ Theo
+
+* Moved prime location to http://jaanga.github.io/libs/ado
+* Many edits to index.html and sample file
+* Added skeleton model
+* Added if no filename, use random model
+* cleaned up read me's
 
 2013-11-02 ~ Theo
 

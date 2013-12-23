@@ -1,6 +1,7 @@
 	var ADO = ADO || {}
 
 	ADO.init = function ( fname ) {
+		var fname = fname || '';
 		var scene, renderer, camera, controls;
 		var light, loader, material, geometry, mesh;
 		var doodle, data, airDoodle;
@@ -52,6 +53,13 @@
 		scene.add( light );
 
 		loader = new THREE.JSONLoader();
+		
+		
+		if ( fname === '' ) {
+			var names = ['pumpkin.js','rubber-duck-10.js','skeleton-left.js','WrightFlyer-pb-jw.js'];
+			fname = 'models/' + names[ Math.floor( Math.random() * names.length) ];
+		}
+		
 		loader.load( fname, function ( geometry, materials ) {
 			ADO.airDoodle = airDoodle = new THREE.Mesh( geometry, new THREE.MeshFaceMaterial( materials ) );
 			airDoodle.castShadow = true;
