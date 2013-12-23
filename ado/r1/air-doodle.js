@@ -10,7 +10,7 @@
 
 		if ( window.innerHeight > 500 ) {
 			ADO.doodle.innerHTML = '<p title="This feature requires a Leap Motion device.">This page has an ' +
-			'<a href="http://jaanga.github.io/libs/ado/index.html/" target="_blank">airDoodle</a></p>';
+			'<a href="http://jaanga.github.io/libs/ado/index.html" target="_blank">airDoodle</a></p>';
 // for testing
 //			data = document.body.appendChild( document.createElement( 'div' ) );
 //			data.style.cssText = 'bottom: 50px; left: 0; margin: auto; position: absolute; right: 0; text-align: center; width: 50% ';

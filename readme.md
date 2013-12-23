@@ -8,7 +8,7 @@ and
 
 
 ## airDoodle
-<http://jaanga.github.io/libs/ado/air-doodle-test.html>
+<http://jaanga.github.io/libs/ado/index.html>
 
 <https://github.com/jaanga/libs/tree/gh-pages/ado>
 
