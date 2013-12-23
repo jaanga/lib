@@ -57,7 +57,7 @@
 		
 		if ( fname === '' ) {
 			var names = ['pumpkin.js','rubber-duck-10.js','skeleton-left.js','WrightFlyer-pb-jw.js'];
-			fname = 'http://http://jaanga.github.io/libs/ado/models/' + names[ Math.floor( Math.random() * names.length) ];
+			fname = 'http://jaanga.github.io/libs/ado/models/' + names[ Math.floor( Math.random() * names.length) ];
 		}
 		
 		loader.load( fname, function ( geometry, materials ) {
