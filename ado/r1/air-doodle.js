@@ -1,20 +1,21 @@
 	var ADO = ADO || {}
-	
+
 	ADO.init = function ( fname ) {
 		var scene, renderer, camera, controls;
-		var light, loader, material, geometry, mesh
+		var light, loader, material, geometry, mesh;
 		var doodle, data, airDoodle;
-		
+
 		ADO.doodle = document.body.appendChild( document.createElement( 'div' ) );
 		ADO.doodle.style.cssText = 'bottom: 0; font: 600 12pt monospace; left: 0; margin: auto; position: absolute; right: 0; text-align: center; width: 50% ';
+
 		if ( window.innerHeight > 500 ) {
 			ADO.doodle.innerHTML = '<p title="This feature requires a Leap Motion device.">This page has an ' +
-			'<a href="http://jaanga.github.io/gestification/projects/air-doodle/" target="_blank">airDoodle</a></p>';
-// for testing			
+			'<a href="http://jaanga.github.io/libs/ado/index.html/" target="_blank">airDoodle</a></p>';
+// for testing
 //			data = document.body.appendChild( document.createElement( 'div' ) );
 //			data.style.cssText = 'bottom: 50px; left: 0; margin: auto; position: absolute; right: 0; text-align: center; width: 50% ';
 		}
-		
+
 		ADO.scene = scene = new THREE.Scene();
 		if ( ! Detector.webgl ) {
 			ADO.renderer = renderer = new THREE.CanvasRenderer();
@@ -24,7 +25,7 @@
 		renderer.setSize( window.innerWidth, window.innerHeight );
 		renderer.shadowMapEnabled = true;
 		document.body.appendChild( renderer.domElement );
-		
+
 		camera = ADO.camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 5000 );
 		camera.position.set( -500, 500, 500 );
 		ADO.controls = controls = new THREE.TrackballControls( camera, renderer.domElement );
@@ -48,7 +49,7 @@
 		light.shadowCameraNear = 1500;
 		light.shadowCameraFar = 2500;
 //		light.shadowCameraVisible = true;
-		scene.add( light );		
+		scene.add( light );
 
 		loader = new THREE.JSONLoader();
 		loader.load( fname, function ( geometry, materials ) {
@@ -57,10 +58,10 @@
 			airDoodle.receiveShadow = true;
 			airDoodle.visible = false;
 			airDoodle.scale.set( 100, 100, 100 )
-			scene.add( airDoodle );	
+			scene.add( airDoodle );
 			ADO.showDoodle = true;
 			ADO.animate();
-		} );	
+		} );
 	};
 
 	ADO.animate = function () {
@@ -70,7 +71,7 @@
 			ADO.renderer.render( ADO.scene, ADO.camera );
 		}
 	};
-	
+
 	ADO.toggleAirDoodle = function () {
 		if ( ADO.showDoodle  === true ) {
 			ADO.showDoodle = false;
@@ -79,20 +80,19 @@
 			ADO.animate();
 		}
 	};
-	
+
 	Leap.loop( function( frame ) {
-		var hand, airDoodle = ADO.airDoodle;	
-		if ( frame.hands.length > 0) {	
+		var hand, airDoodle = ADO.airDoodle;
+		if ( frame.hands.length > 0) {
 			hand = frame.hands[0];
 			airDoodle.position.set( hand.stabilizedPalmPosition[0], hand.stabilizedPalmPosition[1], hand.stabilizedPalmPosition[2] );
 			airDoodle.rotation.set( hand.pitch(), -hand.yaw(), hand.roll() );
 			airDoodle.visible = true;
 //			data.innerHTML = 'Hand X:' + hand.stabilizedPalmPosition[0].toFixed(0) + ' Y:' +  hand.stabilizedPalmPosition[1].toFixed(0) + ' Z:' + hand.stabilizedPalmPosition[2].toFixed(0) + '<br>' +
-//				airDoodle.visible + ' ' + airDoodle.position.x + ' '  + airDoodle.position.y + ' '  + airDoodle.position.z + ' ' 
+//				airDoodle.visible + ' ' + airDoodle.position.x + ' '  + airDoodle.position.y + ' '  + airDoodle.position.z + ' '
 //			'';
 		} else if ( !!airDoodle ) {
 			airDoodle.visible = false;
 		}
-	});	
-	
-	
+	});
+
