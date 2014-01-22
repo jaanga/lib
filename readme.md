@@ -24,7 +24,7 @@ and
 <https://github.com/jaanga/libs/tree/gh-pages/fs>
 
 ## Showdown
-<http://jaanga.github.io/libs/md/readme.html>
-
-<https://github.com/jaanga/libs/tree/gh-pages/md>
+A frequenntly used Markdown interpreter  
+[Showdown GitHub Page]( http://jaanga.github.io/libs/md )  
+[Showdown GitHub Source]( https://github.com/jaanga/libs/tree/gh-pages/md )
 

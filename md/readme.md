@@ -24,16 +24,16 @@ Showdown.js and GitHub Flavored Markdown are not the same. Here are some links t
 
 [Showdown Test]( http://jaanga.github.io/libs/md/showdown-test.html )
 
-[Showdown GUI]( <http://jaanga.github.io/libs/md/showdown-gui.html )
+[Showdown GUI]( http://jaanga.github.io/libs/md/showdown-gui.html )
 
 - Create HTML by entering text in a simple format that's easy to read and write.
 - Type Markdown text in the left window
 - See the HTML in the right
 
-[Corey's read me file on GitHub]( showdown-corey-readme.html )
+[Corey's read me file on GitHub]( http://jaanga.github.io/libs/md/showdown-corey-readme.html )
 
-[Example Source.md]( Example Source.html )  
-[GiHubFlavoredMarkdown.md]( GiHubFlavoredMarkdown.html )
+[Example Source.md]( http://jaanga.github.io/libs/md/Example-Source.html )  
+[GiHubFlavoredMarkdown.md]( http://jaanga.github.io/libs/md/GiHubFlavoredMarkdown.html )
 
 ## Alternatives
 
@@ -48,7 +48,7 @@ Showdown.js and GitHub Flavored Markdown are not the same. Here are some links t
 * embedded usage only
 * requires node
 
-<http://epiceditor.com/?
+<http://epiceditor.com/>
 
 * a live editor...
 
