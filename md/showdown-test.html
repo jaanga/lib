@@ -7,6 +7,7 @@
 </head>
 <body>
 <script src=http://jaanga.github.io/libs/md/showdown.js ></script>
+<script src=http://jaanga.github.io/libs/md//extensions/github.js /></script>
 <script>
 // Thanks to  https://github.com/coreyti/showdown
 
@@ -21,9 +22,9 @@
 	var textarea = document.body.appendChild( document.createElement( 'textarea' ) );
 	textarea.style.cssText = 'height: ' + (window.innerHeight - 100) + 'px; width: 40%; ';
 
-	var converter = new Showdown.converter(); // cannot seem to load extensions
+	var converter = new Showdown.converter( { 'github_flavouring': true, 'tables': true, extensions: ['github'] } ); // cannot seem to load extensions
 	var output = document.body.appendChild( document.createElement( 'div' ) );
-	output.style.cssText = 'left: 50%; position: absolute; top: 50px; width: 45%; ';		
+	output.style.cssText = 'height: ' + (window.innerHeight - 100) + 'px; left: 50%; overflow: scroll; position: absolute; top: 50px; width: 45%; ';
 				
 	convertFile( 'showdown-test.md');
 	

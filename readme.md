@@ -2,6 +2,7 @@ Libs Read Me
 ============
 
 Files we use a lot...  
+
 <http://jaanga.github.io/libs>  
 and  
 <https://github.com/jaanga/libs>
@@ -23,7 +24,7 @@ and
 <https://github.com/jaanga/libs/tree/gh-pages/fs>
 
 ## Showdown
-<http://jaanga.github.io/libs/md/showdown-test.html>
+<http://jaanga.github.io/libs/md/readme.html>
 
 <https://github.com/jaanga/libs/tree/gh-pages/md>
 
