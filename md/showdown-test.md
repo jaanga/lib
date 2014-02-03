@@ -24,6 +24,7 @@ _Use `<` and `>` to make bare links clickable_
 <https://help.github.com/articles/github-flavored-markdown>  
 <http://daringfireball.net/projects/markdown/syntax>  
 <https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet?>  
+<http://www.reddit.com/wiki/commenting>  
 
 
 <!-- insert images two ways -->
