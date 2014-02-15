@@ -1,8 +1,8 @@
-docBrowser.js Read Me
+docBrowser Read Me
 =====================
 
 ## Concept
-docBrowser.js is a very simple and very small library for browsing Markdown files on GitHub.
+docBrowser is a very simple and very small library for browsing GitHub Markdown files via GitHub Pages as well as locally.
 
 ## Objectives
 
@@ -17,7 +17,7 @@ If this is 'your 3D happy-place' then it better be dripping with luscious intera
 
 
 ### Lots of images and videos
-Don't forget the Handicapped
+Don't forget the Handicapped  
 Not everybody has cutting edge technology
 
 
@@ -84,6 +84,7 @@ Write with a single thought process
 
 ## Live Demo
 
+[docBrowser R3](http://jaanga.github.io/libs/db/index.html)  
 [docBrowser R2](http://jaanga.github.io/libs/db/doc-browser-prototype.html)
 
 ## Notes
@@ -117,15 +118,28 @@ Thus the title of the library is docBrowser. Of course if used in a title or at 
 
 <http://jaanga.github.io/libs/md/showdown-test.html>
 
-### Copyright, License and Credits
-Copyright &copy; 2013 Jaanga authors
+
+## Project Links
+
+You have two ways of viewing the docBrowser files:
+
+* Web pages hosted on GitHub: [jaanga.github.io]( http://jaanga.github.io/libs/db/ "view the files as apps." ) <input value="<< You are now probably here." size=28 style="font:bold 12pt monospace;border-width:0;" >  
+* Source code on GitHub: [github.com/jaanga]( https://github.com/jaanga/libs/tree/gh-pages/db/ "View the files as source code." ) <scan style=display:none ><< You are now probably here.</scan>
+
+
+## Copyright, License and Credits
+Copyright &copy; 2014 Jaanga authors
 
 All work herein is available under the MIT License.  
 
 For details see [Jaanga Copyright and License](http://jaanga.github.io/libs/jaanga-copyright-and-mit-license.md)
 
 
-### Change Log
+## Change Log
+
+2014-02-10 ~ Theo
+
+* r3 ~ simpler than ever
 
 2013-11-14 ~ Theo
 
