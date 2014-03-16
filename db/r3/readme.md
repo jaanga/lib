@@ -9,7 +9,7 @@ docBrowser is a very simple and very small library for browsing GitHub Markdown 
 _The following are some of the thoughts going on while this app and these web pages are being developed. This text is very much a work in rapid progress._
 
 ### Easy to enhance
-Create something that screams: 'tweak me till I twerkle.' 'Open up the hood, pick up your wrench and screwdriver, and take me apart.'
+Create something that screams: 'tweak me till I twerk.' 'Open up the hood, pick up your wrench and screwdriver, and take me apart.'
 
 
 ### Lots of interactive 3D
