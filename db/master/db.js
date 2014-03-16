@@ -1,18 +1,7 @@
-<!doctype html>
-<html lang=en>
-<head>
-<meta name=viewport content=width=device-width>
-<meta charset=utf-8>
-</head>
-<body>
-<script src=http://jaanga.github.io/libs/md/showdown.js ></script>
-<script>
-// Theo Armour ~ 2014-02-17
+// Theo Armour ~ 2014-03-16
 
 	var content;
 	var converter;
-
-	init();
 
 	function init() {
 		converter = new Showdown.converter();
@@ -30,11 +19,15 @@
 // Menu panel
 		var menu = document.body.appendChild( document.createElement( 'div' ) );
 		menu.style.cssText = basics + horizontalsMenu + verticals ;
+		menu.innerHTML = converter.makeHtml( requestFile( 'readme-menu.md' ) );
+// Messages panel
+		var messages = menu.appendChild( document.createElement( 'div' ) );
+//		menu.style.cssText = basics + horizontalsMenu + verticals ;
+		messages.innerHTML = msg;
 
 // Content panel
 		content = document.body.appendChild( document.createElement( 'div' ) );
 		content.style.cssText = basics + horizontalsContent + verticals ;
-		menu.innerHTML = converter.makeHtml( requestFile( 'readme-menu.md' ) );
 
 // file to display if no hash or with hash
 		var index = window.location.pathname.lastIndexOf( '/' ) + 1;
@@ -55,7 +48,7 @@
 // Update window title to match H1 of content file
 		document.title = content.innerHTML.match( /<h1(.*?)>(.*?)<\/h1>/ )[2];
 
-// Reset background color to all menu items
+// Reset background color to all paragraphs = automatcally catching all the menu items
 		var paragraphs = document.getElementsByTagName('p');
 
 		for (var i = 0, len = paragraphs.length; i < len; i++) {
@@ -68,7 +61,6 @@
 
 // Update URL hash
 			if ( element === rm ) {
-
 // if at home page, delete any hash and clean up the history
 				history.pushState( '', document.title, window.location.pathname );
 			} else {
@@ -84,7 +76,3 @@
 		xmlHttp.send( null );
 		return xmlHttp.responseText;
 	}
-
-</script>
-</body>
-</html>

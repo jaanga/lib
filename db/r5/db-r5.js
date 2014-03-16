@@ -3,8 +3,6 @@
 	var content;
 	var converter;
 
-	init();
-
 	function init() {
 		converter = new Showdown.converter();
 
@@ -25,7 +23,7 @@
 // Messages panel
 		var messages = menu.appendChild( document.createElement( 'div' ) );
 //		menu.style.cssText = basics + horizontalsMenu + verticals ;
-		messages.innerHTML = converter.makeHtml( requestFile( 'message.md' ) );
+		messages.innerHTML = msg;
 
 // Content panel
 		content = document.body.appendChild( document.createElement( 'div' ) );

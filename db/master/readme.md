@@ -4,7 +4,7 @@ Read Me
 ## Concept
 Mission
 
-Vission
+Vision
 
 ## Road Map
 
@@ -16,7 +16,7 @@ Vission
 
 You have two ways of viewing the XXX files:
 
-* Code hosted on GitHub: [xxx.github.io]( http://xxx.github.io/ "view the files as apps." ) <input value="<< You are now probably here." size=28 style="font:bold 12pt monospace;border-width:0;" >  
+* Web page hosted on GitHub: [xxx.github.io]( http://xxx.github.io/ "view the files as apps." ) <input value="<< You are now probably here." size=28 style="font:bold 12pt monospace;border-width:0;" >  
 * Source code on GitHub: [github.com/xxx]( https://github.com/xxx/xxx.github.io/ "View the files as source code." ) <scan style=display:none ><< You are now probably here.</scan>
 
 
@@ -35,9 +35,11 @@ Bugs on browsers other than Chrome need not be reported until such time as the w
 
 
 ### Copyright and License
->>>>>>>>>>> copyright &copy; 2014 Jaanga authors ~ All work herein is under the [MIT License](http://jaanga.github.io/libs/jaanga-copyright-and-mit-license.md)
->>>>>>>>>>> [FGx copyright notice and license]( https://github.com/fgx/fgx.github.io/blob/master/fgx-copyright-notice-and-license.md )
 
+copyright &copy; 2014 Jaanga authors ~ All work herein is under the [MIT License](http://jaanga.github.io/libs/jaanga-copyright-and-mit-license.md)
+<!--
+[FGx copyright notice and license]( https://github.com/fgx/fgx.github.io/blob/master/fgx-copyright-notice-and-license.md )
+-->
 This repository is at an early and volatile stage. Not all licensing requirements may have been fully met let alone identified. It is the intension of the authors to play fair and all such requirements will either be met or the feature in question will turned off.
 
 ### Change Log
