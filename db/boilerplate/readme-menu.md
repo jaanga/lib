@@ -1,4 +1,4 @@
-[Jaanga](../../index.html ) &raquo;<br>[Libs]( ../index.html ) &raquo;</br>[docBrowser]( ./index.html )
+[Parent](../../index.html ) &raquo; [Folder]( ../index.html ) &raquo; [App]( ./index.html )
 ================================================================================================
 
 <p id=rm >
@@ -19,5 +19,5 @@
 
 ****
 
-[Source Code on GitHub]( https://github.com/jaanga/libs/db/ )  
+[Source Code on GitHub]( https://github.com/jaanga/xxx/ )  
 [Copyright and License]( https://github.com/jaanga/jaanga.github.io/blob/master/jaanga-copyright-and-mit-license.md )
