@@ -14,6 +14,11 @@ May need three links
 
 Note to self: Would hiding links on the .com-side read me files help?
 
+Main thing:
+Links update nicly when files are local, because link to remote fires an update event.
+But on GitHub, URL has not changed. So no event fired.
+Therefore must add event listener for hash change...
+
 2014-03-17 ~ Theo
 
 Getting links in the content `DIV` to work appropriately is turning out to be a bit of a fun issue. 
