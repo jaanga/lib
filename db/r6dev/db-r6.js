@@ -58,7 +58,7 @@
 		}
 
 // Highlight current menu item
-		if ( element ) {
+		if ( element.style ) {
 			element.style.backgroundColor = '#edd';
 
 // Update URL hash
