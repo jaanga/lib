@@ -4,7 +4,6 @@
 	var converter;
 
 	function init() {
-		window.removeEventListener('hashchange', blip, false);
 		converter = new Showdown.converter();
 
 // Styles for the doc
@@ -22,13 +21,12 @@
 		var menu = document.body.appendChild( document.createElement( 'div' ) );
 		menu.style.cssText = basics + horizontalsMenu + verticals ;
 		menu.innerHTML = converter.makeHtml( requestFile( 'readme-menu.md' ) );
+
 // Messages panel
 		var messages = menu.appendChild( document.createElement( 'div' ) );
-//		menu.style.cssText = basics + horizontalsMenu + verticals ;
 		messages.innerHTML = msg;
 
 // Content panel
-
 		content = document.body.appendChild( document.createElement( 'div' ) );
 		content.style.cssText = basics + horizontalsContent + verticals ;
 		}
@@ -40,10 +38,8 @@
 		if ( !location.hash ) {
 			displayPage( 'readme.md', rm );
 		} else {
-			displayPage( location.hash.substr(1), null );
+			displayPage( location.hash.substr(1), location.hash.substr(2) );
 		}
-
-
 	}
 
 	function displayPage( fname, element ) {
@@ -73,12 +69,6 @@
 				location.hash = fname ;
 			}
 		}
-				window.addEventListener('hashchange', blip, false);
-	}
-
-	function blip() {
-		console.log( location.hash );
-		init();
 	}
 
 // Fetch a file

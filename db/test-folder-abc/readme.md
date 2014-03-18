@@ -6,11 +6,11 @@ Embedded `iframe` with HTML content:
 <!-- iframe displays on github.io but not on github.com -->
 <iframe src=./index.html width=96% height=300px style=margin:2%; ></iframe>
 
-[Read Me]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html )
+[Read Me]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html#rm )
 
-[ ABC Read Me]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html#../test-folder-abc/readme.md )
+[ ABC Read Me]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html#../test-folder-abc/readme.md#abc )
 
-[ DEF Read Me]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html#../test-folder-def/readme.md )
+[ DEF Read Me]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html#../test-folder-def/readme.md#def )
 
 ## Text
 

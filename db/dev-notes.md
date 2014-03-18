@@ -2,6 +2,7 @@ Dev Notes
 =========
 
 2014-03-18 ~ Theo
+
 Links in the content dev should be absolute
 Why?
 Because the `blob/gh-pages` parts mean that relative links go to the wrong place depepenig on github.io and .com
@@ -11,7 +12,7 @@ May need three links
 - display read me
 - run app 
 
-Would hiding links on the .com read me help?
+Note to self: Would hiding links on the .com-side read me files help?
 
 2014-03-17 ~ Theo
 

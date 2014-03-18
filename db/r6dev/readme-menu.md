@@ -18,7 +18,7 @@
 </p>
 
 <p id=dvn >
-	<a href=JavaScript:displayPage("./dev-notes.md",dvn); >Dev Notes</a>
+	<a href=JavaScript:displayPage("../dev-notes.md",dvn); >Dev Notes</a>
 </p>
 
 ****
