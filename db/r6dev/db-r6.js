@@ -40,6 +40,7 @@
 		} else {
 			displayPage( location.hash.substr(1), location.hash.substr(2) );
 		}
+
 		window.addEventListener('hashchange', init, false );
 console.log( 'hash 1:', location.hash.substr(1), 'hash 2:', location.hash.substr(2) );
 	}

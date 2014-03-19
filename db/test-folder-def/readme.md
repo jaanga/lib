@@ -8,7 +8,7 @@ Test Folder DEF Read Me
 
 [ DEF Read Me]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html#../test-folder-def/readme.md#def )
 
-[ Dev Notes]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html#dev-notes.md#dvn )
+[ Dev Notes]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html#../dev-notes.md#dvn )
 
 ## Text
 
