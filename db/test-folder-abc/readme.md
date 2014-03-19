@@ -6,7 +6,7 @@ Embedded `iframe` with HTML content:
 <!-- iframe displays on github.io but not on github.com -->
 <iframe src=./index.html width=96% height=300px style=margin:2%; ></iframe>
 
-[Read Me]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html#rm )
+[Read Me]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html )
 
 [ ABC Read Me]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html#../test-folder-abc/readme.md#abc )
 

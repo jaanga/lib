@@ -2,7 +2,7 @@ Test Folder DEF Read Me
 ======================
 
 
-[Read Me]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html#rm )
+[Read Me]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html )
 
 [ ABC Read Me]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html#../test-folder-abc/readme.md#abc )
 

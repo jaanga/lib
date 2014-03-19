@@ -23,5 +23,5 @@
 
 ****
 
-[Source Code on GitHub]( https://github.com/jaanga/xxx/ )  
+[Source Code on GitHub]( https://github.com/jaanga/libs/tree/gh-pages/db/r6dev )  
 [Copyright and License]( https://github.com/jaanga/jaanga.github.io/blob/master/jaanga-copyright-and-mit-license.md )
