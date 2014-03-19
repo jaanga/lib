@@ -1,7 +1,13 @@
 Dev Notes
 =========
 
+2014-03-19 ~ Theo
+
+
+
 2014-03-18 ~ Theo
+
+Add hash change event.
 
 Links in the content dev should be absolute
 Why?

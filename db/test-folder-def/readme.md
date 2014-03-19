@@ -1,5 +1,5 @@
 Test Folder DEF Read Me
-======================
+=======================
 
 
 [Read Me]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html )
@@ -7,5 +7,9 @@ Test Folder DEF Read Me
 [ ABC Read Me]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html#../test-folder-abc/readme.md#abc )
 
 [ DEF Read Me]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html#../test-folder-def/readme.md#def )
+
+[ Dev Notes]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html#dev-notes.md#dvn )
+
+## Text
 
 lorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?
