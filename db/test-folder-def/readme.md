@@ -2,13 +2,13 @@ Test Folder DEF Read Me
 =======================
 
 
-[Read Me]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html )
+[Read Me]( http://jaanga.github.io/libs/db/readme-reader.html )
 
-[ ABC Read Me]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html#../test-folder-abc/readme.md#abc )
+[ ABC Read Me]( http://jaanga.github.io/libs/db/readme-reader.html#./test-folder-abc/readme.md#abc )
 
-[ DEF Read Me]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html#../test-folder-def/readme.md#def )
+[ DEF Read Me]( http://jaanga.github.io/libs/db/readme-reader.html#./test-folder-def/readme.md#def )
 
-[ Dev Notes]( http://jaanga.github.io/libs/db/r6dev/readme-reader.html#../dev-notes.md#dvn )
+[ Dev Notes]( http://jaanga.github.io/libs/db/readme-reader.html#./dev-notes.md#dvn )
 
 ## Text
 
