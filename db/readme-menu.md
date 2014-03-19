@@ -20,5 +20,5 @@
 
 ****
 
-[Source Code on GitHub]( hhttps://github.com/jaanga/libs/tree/gh-pages/db )  
+[Source Code on GitHub]( https://github.com/jaanga/libs/tree/gh-pages/db )  
 [Copyright and License]( https://github.com/jaanga/jaanga.github.io/blob/master/jaanga-copyright-and-mit-license.md )
