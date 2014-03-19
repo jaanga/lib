@@ -38,7 +38,7 @@
 		if ( !location.hash ) {
 			displayPage( 'readme.md', rm );
 		} else {
-			displayPage( location.hash.substr(1), location.hash.substr(2) );
+			displayPage( location.hash.split('#')[1], location.hash.split('#')[2] );
 		}
 
 		window.addEventListener('hashchange', init, false );

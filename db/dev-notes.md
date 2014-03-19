@@ -3,11 +3,11 @@ Dev Notes
 
 2014-03-19 ~ Theo
 
+Add hash change event. Seems to be OK. Unless an correct URL is added. Then reloads indefinetely.
 
 
 2014-03-18 ~ Theo
 
-Add hash change event.
 
 Links in the content dev should be absolute
 Why?

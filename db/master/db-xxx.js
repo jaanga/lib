@@ -16,20 +16,18 @@
 		var horizontalsContent = 'left: 30%; width: 60%; ';
 		var verticals = 'height: ' + ( window.innerHeight * 0.88 ) + 'px; top: 60px; ';
 
-		if ( !content ) {
 // Menu panel
-			var menu = document.body.appendChild( document.createElement( 'div' ) );
-			menu.style.cssText = basics + horizontalsMenu + verticals ;
-			menu.innerHTML = converter.makeHtml( requestFile( 'readme-menu.md' ) );
-
+		var menu = document.body.appendChild( document.createElement( 'div' ) );
+		menu.style.cssText = basics + horizontalsMenu + verticals ;
+		menu.innerHTML = converter.makeHtml( requestFile( 'readme-menu.md' ) );
 // Messages panel
-			var messages = menu.appendChild( document.createElement( 'div' ) );
-			messages.innerHTML = msg;
+		var messages = menu.appendChild( document.createElement( 'div' ) );
+//		menu.style.cssText = basics + horizontalsMenu + verticals ;
+		messages.innerHTML = msg;
 
 // Content panel
-			content = document.body.appendChild( document.createElement( 'div' ) );
-			content.style.cssText = basics + horizontalsContent + verticals ;
-		}
+		content = document.body.appendChild( document.createElement( 'div' ) );
+		content.style.cssText = basics + horizontalsContent + verticals ;
 
 // file to display if no hash or with hash
 		var index = window.location.pathname.lastIndexOf( '/' ) + 1;
@@ -40,8 +38,6 @@
 		} else {
 			displayPage( location.hash.substr(1), null );
 		}
-
-		window.addEventListener('hashchange', init, false );
 	}
 
 	function displayPage( fname, element ) {
@@ -50,7 +46,7 @@
 		content.innerHTML = converter.makeHtml( requestFile( fname ) );
 
 // Update window title to match H1 of content file
- 		document.title = content.innerHTML.match( /<h1(.*?)>(.*?)<\/h1>/ )[2];
+		document.title = content.innerHTML.match( /<h1(.*?)>(.*?)<\/h1>/ )[2];
 
 // Reset background color to all paragraphs = automatcally catching all the menu items
 		var paragraphs = document.getElementsByTagName('p');
@@ -60,7 +56,7 @@
 		}
 
 // Highlight current menu item
-		if ( element.style ) {
+		if ( !!element ) {
 			element.style.backgroundColor = '#edd';
 
 // Update URL hash
