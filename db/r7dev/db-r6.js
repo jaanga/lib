@@ -50,7 +50,7 @@
 		content.innerHTML = converter.makeHtml( requestFile( fname ) );
 
 // Update window title to match H1 of content file
-		document.title = content.innerHTML.match( /<h1(.*?)>(.*?)<\/h1>/ )[2];
+ 		document.title = content.innerHTML.match( /<h1(.*?)>(.*?)<\/h1>/ )[2];
 
 // Reset background color to all paragraphs = automatcally catching all the menu items
 		var paragraphs = document.getElementsByTagName('p');
