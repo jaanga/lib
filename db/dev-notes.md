@@ -1,13 +1,18 @@
 Dev Notes
 =========
 
+2014-03-20 ~ Theo
+Trying to simplify the development pocess.
+Master is the current one. Dev files are clean and nearly ready to go - except for db.js od any file where the action is
+The sandbox is the db project read me and its associated files. An 'Eat your own dev dogfood' scnario.
+   
+
 2014-03-19 ~ Theo
 
-Add hash change event. Seems to be OK. Unless an correct URL is added. Then reloads indefinetely.
+Add hash change event. Seems to be OK. Unless an incorrect URL is added. Then reloads indefinetely.
 
 
 2014-03-18 ~ Theo
-
 
 Links in the content dev should be absolute
 Why?
@@ -24,6 +29,7 @@ Main thing:
 Links update nicly when files are local, because link to remote fires an update event.
 But on GitHub, URL has not changed. So no event fired.
 Therefore must add event listener for hash change...
+
 
 2014-03-17 ~ Theo
 

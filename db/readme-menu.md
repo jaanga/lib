@@ -5,17 +5,21 @@
 	<a href=JavaScript:displayPage("readme.md",rm); >Read Me</a>
 </p>
 
-<p id=abc >
-	<a href=JavaScript:displayPage("./test-folder-abc/readme.md",abc); >test-folder-abc Read Me</a>
+
+<p id=p2 >
+	<a href=JavaScript:displayPage("./page2.md#p2",p2); >Page2</a>
 </p>
 
+<p id=abc >
+	<a href=JavaScript:displayPage("./test-folder-abc/readme.md#abc",abc); >test-folder-abc Read Me</a>
+</p>
 
 <p id=def >
-	<a href=JavaScript:displayPage("./test-folder-def/readme.md",def); >test-folder-def Read Me</a>
+	<a href=JavaScript:displayPage("./test-folder-def/readme.md#def",def); >test-folder-def Read Me</a>
 </p>
 
 <p id=dvn >
-	<a href=JavaScript:displayPage("./dev-notes.md",dvn); >Dev Notes</a>
+	<a href=JavaScript:displayPage("./dev-notes.md#dvn",dvn); >Dev Notes</a>
 </p>
 
 ****

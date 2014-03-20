@@ -1,22 +1,20 @@
-// (c) Theo Armour ~ 2014-03-19 ~ r6 ~ MIT License 
+// (c) Theo Armour ~ 2014-03-20 ~ r7 dev ~ MIT License 
 
-	var content;
 	var converter;
-
+	var content;
 	function init() {
-		converter = new Showdown.converter();
-
+		if ( !converter ) {
+			converter = new Showdown.converter();
 // Styles for the doc
-		var css = document.body.appendChild( document.createElement('style') );
-		css.innerHTML = 'body { font: normal 12pt sans-serif; margin: 0; overflow: hidden; }';
+			var css = document.body.appendChild( document.createElement('style') );
+			css.innerHTML = 'body { font: normal 12pt sans-serif; margin: 0; overflow: hidden; }';
 
-//Styles for menu and content
-		var basics = 'border: 3px double #eee; overflow-x: hidden; overflow-y: auto; padding: 10px; position: absolute; ';
-		var horizontalsMenu = 'left: 10%; width: 15%; ';
-		var horizontalsContent = 'left: 30%; width: 60%; ';
-		var verticals = 'height: ' + ( window.innerHeight * 0.88 ) + 'px; top: 60px; ';
+	//Styles for menu and content
+			var basics = 'border: 3px double #eee; overflow-x: hidden; overflow-y: auto; padding: 10px; position: absolute; ';
+			var horizontalsMenu = 'left: 10%; width: 15%; ';
+			var horizontalsContent = 'left: 30%; width: 60%; ';
+			var verticals = 'height: ' + ( window.innerHeight * 0.88 ) + 'px; top: 60px; ';
 
-		if ( !content ) {
 // Menu panel
 			var menu = document.body.appendChild( document.createElement( 'div' ) );
 			menu.style.cssText = basics + horizontalsMenu + verticals ;
@@ -29,19 +27,20 @@
 // Content panel
 			content = document.body.appendChild( document.createElement( 'div' ) );
 			content.style.cssText = basics + horizontalsContent + verticals ;
-		}
 
-// file to display if no hash or with hash
-//		var index = window.location.pathname.lastIndexOf( '/' ) + 1;
-//		var filename = window.location.pathname.substr( index ).replace( '.html','.md' );
+			window.addEventListener('hashchange', init, false );
+		}
 
 		if ( !location.hash ) {
 			displayPage( 'readme.md', rm );
 		} else {
+			var hashes = location.hash.split('#');
 			displayPage( location.hash.substr(1), '' );
 		}
 
-		window.addEventListener('hashchange', init, false );
+
+console.log( location.hash, hashes, 'h2', hashes[2] );
+
 	}
 
 	function displayPage( fname, element ) {
@@ -50,7 +49,7 @@
 		content.innerHTML = converter.makeHtml( requestFile( fname ) );
 
 // Update window title to match H1 of content file
- 		document.title = content.innerHTML.match( /<h1(.*?)>(.*?)<\/h1>/ )[2];
+		document.title = content.innerHTML.match( /<h1(.*?)>(.*?)<\/h1>/ )[2];
 
 // Reset background color to all paragraphs = automatcally catching all the menu items
 		var paragraphs = document.getElementsByTagName('p');
@@ -60,7 +59,7 @@
 		}
 
 // Highlight current menu item
-		if ( element.style ) {
+		if ( element && element.style ) {
 			element.style.backgroundColor = '#edd';
 
 // Update URL hash
