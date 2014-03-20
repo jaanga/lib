@@ -2,6 +2,7 @@
 
 	var converter;
 	var content;
+
 	function init() {
 		if ( !converter ) {
 			converter = new Showdown.converter();
@@ -32,17 +33,13 @@
 		}
 
 		if ( !location.hash ) {
-			displayPage( '#readme.md#rm');
+			displayPage( '#readme.md#rm' );
 		} else {
 			displayPage( location.hash );
 		}
-
-console.log( 'init', location.hash );
 	}
 
 	function displayPage( hash ) {
-console.log( 'disPage', hash );
-
 		var hashes = hash.split('#');
 
 // Fetch and show the content file
@@ -58,15 +55,16 @@ console.log( 'disPage', hash );
 			paragraphs[i].style.backgroundColor = '';
 		}
 
+// Highlight current menu item
 		if ( hashes[2] ) {
 			var element = document.getElementById( hashes[2] );
+			if ( element && element.style ) {
+				element.style.backgroundColor = '#edd';
+			}
 		}
-// Highlight current menu item
-		if ( element && element.style ) {
-			element.style.backgroundColor = '#edd';
-		}
+
 // Update URL hash
-		if ( element === rm ) {
+		if ( hashes[1] === 'readme.md' ) {
 // if at home page, delete any hash and clean up the history
 			history.pushState( '', document.title, window.location.pathname );
 		} else {

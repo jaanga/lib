@@ -1,11 +1,14 @@
-Dev Notes
-=========
+docBrowser Dev Notes
+====================
+
 
 2014-03-20 ~ Theo
 Trying to simplify the development pocess.
 Master is the current one. Dev files are clean and nearly ready to go - except for db.js od any file where the action is
 The sandbox is the db project read me and its associated files. An 'Eat your own dev dogfood' scnario.
    
+All now looking very clean. Tomorrow: final check and roll it out...
+
 
 2014-03-19 ~ Theo
 

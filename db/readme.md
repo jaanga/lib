@@ -53,6 +53,7 @@ This repository is at an early and volatile stage. Not all licensing requirement
 2014-03-20 ~ Theo
 
 * Trying to simplify the dev stream
+* Big code clean up and simplification
 
 2014-03-19 ~ Theo
 
