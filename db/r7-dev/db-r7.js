@@ -32,43 +32,45 @@
 		}
 
 		if ( !location.hash ) {
-			displayPage( 'readme.md', rm );
+			displayPage( '#readme.md#rm');
 		} else {
-			var hashes = location.hash.split('#');
-			displayPage( location.hash.substr(1), '' );
+			displayPage( location.hash );
 		}
 
-
-console.log( location.hash, hashes, 'h2', hashes[2] );
-
+console.log( 'init', location.hash );
 	}
 
-	function displayPage( fname, element ) {
+	function displayPage( hash ) {
+console.log( 'disPage', hash );
+
+		var hashes = hash.split('#');
 
 // Fetch and show the content file
-		content.innerHTML = converter.makeHtml( requestFile( fname ) );
+		content.innerHTML = converter.makeHtml( requestFile( hashes[1] ) );
 
 // Update window title to match H1 of content file
 		document.title = content.innerHTML.match( /<h1(.*?)>(.*?)<\/h1>/ )[2];
 
-// Reset background color to all paragraphs = automatcally catching all the menu items
+// Reset background color to all paragraphs ` thus automatcally catching all the menu items
 		var paragraphs = document.getElementsByTagName('p');
 
 		for (var i = 0, len = paragraphs.length; i < len; i++) {
 			paragraphs[i].style.backgroundColor = '';
 		}
 
+		if ( hashes[2] ) {
+			var element = document.getElementById( hashes[2] );
+		}
 // Highlight current menu item
 		if ( element && element.style ) {
 			element.style.backgroundColor = '#edd';
-
+		}
 // Update URL hash
-			if ( element === rm ) {
+		if ( element === rm ) {
 // if at home page, delete any hash and clean up the history
-				history.pushState( '', document.title, window.location.pathname );
-			} else {
-				location.hash = fname ;
-			}
+			history.pushState( '', document.title, window.location.pathname );
+		} else {
+			location.hash = hash;
 		}
 	}
 
