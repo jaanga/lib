@@ -6,7 +6,7 @@ docBrowser Read Me
 You have two ways of viewing the docBrowser files:
 
 * Web pages hosted on GitHub: [jaanga.github.io/libs/db]( http://jaanga.github.io/libs/db/ "view the files as apps." ) <input value="<< You are now probably here." size=28 style="font:bold 12pt monospace;border-width:0;" >  
-* Source code on GitHub: [github.com/jaanga/libs/db]( https://github.com/jaanga/jaanga.github.io/libs/db/ "View the files as source code." ) <scan style=display:none ><< You are now probably here.</scan>
+* Source code on GitHub: [github.com/jaanga/libs/db]( https://github.com/jaanga/libs/tree/gh-pages/db "View the files as source code." ) <scan style=display:none ><< You are now probably here.</scan>
 
 ## Concept
 
@@ -33,13 +33,11 @@ The docBrowesr library allows you to write the content once - in Markdown format
 
 ## Road Map
 
-* Menus always highlight appropriately when internal links are displayed in content div 
+* Add web font capability
 * Objectify/name space?
 
 
 ## Issues /Bugs
-
-
 
 
 
@@ -49,6 +47,10 @@ copyright &copy; 2014 Jaanga authors ~ All work herein is under the [MIT License
 This repository is at an early and volatile stage. Not all licensing requirements may have been fully met let alone identified. It is the intension of the authors to play fair and all such requirements will either be met or the feature in question will turned off.
 
 ### Change Log
+
+2014-03-21 ~ Theo
+
+* * Menus highlight appropriately when internal links are displayed in content div 
 
 2014-03-20 ~ Theo
 

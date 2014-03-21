@@ -1,4 +1,4 @@
-// (c) Theo Armour ~ 2014-03-20 ~ r7 ~ MIT License 
+// (c) Theo Armour ~ 2014-03-20 ~ r8 dev ~ MIT License 
 
 	var converter;
 	var content;

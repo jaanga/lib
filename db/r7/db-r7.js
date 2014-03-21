@@ -1,4 +1,4 @@
-// (c) Theo Armour ~ 2014-03-20 ~ r7 dev ~ MIT License 
+// (c) Theo Armour ~ 2014-03-20 ~ r8 dev ~ MIT License 
 
 	var converter;
 	var content;
@@ -48,7 +48,7 @@
 // Update window title to match H1 of content file
 		document.title = content.innerHTML.match( /<h1(.*?)>(.*?)<\/h1>/ )[2];
 
-// Reset background color to all paragraphs ` thus automatcally catching all the menu items
+// Reset background color to all paragraphs ` thus automatically catching all the menu items
 		var paragraphs = document.getElementsByTagName('p');
 
 		for (var i = 0, len = paragraphs.length; i < len; i++) {
