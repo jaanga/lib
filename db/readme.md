@@ -3,10 +3,23 @@ Read Me
 
 ## Concept
 
-Mission
-docBrowser is a very simple and very small library for browsing GitHub Markdown files via GitHub Pages as well as locally.
+###Mission
+docBrowser is a very simple and very small JavaScript library for browsing GitHub Markdown files via GitHub Pages.
 
-## Vision / Objectives / Desired Features
+### Vision / Objectives / Desired Features
+DocBrowser should be as simple and as small as possible without being too simple and too small.
+
+## The Problem
+The primary way of understanding what a Gitub repository is about is via its Read Me file.
+GitHub Read Me files are displayyed as HTML if they are written ib GitHub Markdown format.
+GitHub also supports the hosting of static web pages that based on HTML. CSS and JavaScript.
+The probllem is that if you want data to appear on both the Read Me file and as a web page then you need two copies of the content - ine in Markdown and the other in HTML.
+
+## The Solution 
+The docDrowesr library allows you to write the content once - in Markdown format - and has the comtent appear nicely formatted in both systems.
+
+
+## Features
 
 _The following are some of the thoughts going on while this app and these web pages are being developed. This text is very much a work in rapid progress._
 
@@ -17,22 +30,24 @@ _The following are some of the thoughts going on while this app and these web pa
 
 ### Support Lots of interactive 3D
 
-* If this is 'your 3D happy-place' then it better be dripping with luscious interactive 3D
+* If this is 'your 3D happy-place' then the library better be open to luscious interactive 3D
 
 
 ### Support lots of images and videos
 
-* Don't forget the Handicapped  
+Yet:
+
+* Don't forget the handicapped  
 * Not everybody has cutting edge technology
 
 
 ### Apps are from Venus. Code is from Mars.
 
-* two links for every repo - one for app view - one for source view  
+* Two links for every repo - one for app view - one for source view  
 * And one for the read me.
-* html files are about using the apps
-* moving around github is about looking at source code
-* seamless transitions between running apps, parsing source code and viewing read me files 
+* HTML files are about using the apps
+* Moving around github is about looking at source code
+* Needs seamless transitions between running apps, parsing source code and viewing read me files 
 
 
 ### Embrace GitHub
@@ -92,13 +107,12 @@ _The following are some of the thoughts going on while this app and these web pa
 
 ## Road Map
 
-* Move the code of the HTML file and into a JavaScript file
 * Objectify/name space?
-* Add universal IM capability
+
 
 ## Issues /Bugs
 
-* Make it easier to carry out global updates
+
 
 ## Project Links
 
@@ -114,6 +128,13 @@ copyright &copy; 2014 Jaanga authors ~ All work herein is under the [MIT License
 This repository is at an early and volatile stage. Not all licensing requirements may have been fully met let alone identified. It is the intension of the authors to play fair and all such requirements will either be met or the feature in question will turned off.
 
 ### Change Log
+
+2014-03-16 ~ Theo
+
+* Move the code of the HTML file and into a JavaScript file
+* Add universal IM capability
+* Make it easier to carry out global updates
+
 
 2014-03-15 ~ Theo
 

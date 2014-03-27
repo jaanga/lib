@@ -1,24 +1,25 @@
 <!doctype html>
-<html lang='en'>
+<html lang=en >
 <head>
-<title>File Saverz</title>
-<meta charset='utf-8'>
+<title>File Saver</title>
+<meta charset=utf-8 >
 </head>
 <body>
-<script src="http://jaanga.github.io/libs/fs/FileSaver.min.js"></script>
+<script src=http://jaanga.github.io/libs/fs/FileSaver.js ></script>
 <script>
 	document.body.style.cssText = 'font: normal 12pt monospace';
 	
 	var info = document.body.appendChild( document.createElement( 'div' ) );
-	info.innerHTML = '<p><a href="#" onclick="saveIt()" >SaveIt</a></p>';
+	info.innerHTML = '<p><a href=JavaScript:saveIt(); >Save</a></p>';
 
 	var text = document.body.appendChild( document.createElement( 'textarea' ) );
 	text.style.cssText = 'height: 200px; width: 500px;';
 
 	function saveIt() {
-		var blob = new Blob([text.value], {type: "text/plain;charset=utf-8"});
-		saveAs(blob, 'test.txt');
+		var blob = new Blob( [ text.value ], { type: "text/plain;charset=utf-8" } );
+		saveAs( blob, 'test.txt' );
 	}
+
 </script>
 </body>
 </html>
