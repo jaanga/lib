@@ -41,7 +41,11 @@
 
 	function displayPage( hash ) {
 		var hashes = hash.split('#');
+<<<<<<< HEAD
 console.log( hashes );
+=======
+
+>>>>>>> 776f007910465f69bea54cb217b009ee18a2e311
 // Fetch and show the content file
 		content.innerHTML = converter.makeHtml( requestFile( hashes[1] ) );
 

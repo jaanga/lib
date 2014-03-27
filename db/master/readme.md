@@ -1,10 +1,23 @@
 Read Me
 =======
 
-## Concept
-Mission
+### Live Demo
 
-Vision
+xxx xxx
+<iframe src="http://xxx.github.io/index.html" width=100% height=500px class='overview' >
+There is an `iframe` here. It is not visible when viewed on github.com/xxx. To view, please go to fgx.github.io. See 'Project Links' just below.
+</iframe>
+
+
+## Concept
+
+### Mission
+
+###Vision
+
+
+## Features
+
 
 ## Road Map
 
@@ -12,7 +25,7 @@ Vision
 ## Issues /Bugs
 
 
-## Project Links
+### Project Links
 
 You have two ways of viewing the XXX files:
 
@@ -40,7 +53,7 @@ copyright &copy; 2014 Jaanga authors ~ All work herein is under the [MIT License
 <!--
 [FGx copyright notice and license]( https://github.com/fgx/fgx.github.io/blob/master/fgx-copyright-notice-and-license.md )
 -->
-This repository is at an early and volatile stage. Not all licensing requirements may have been fully met let alone identified. It is the intension of the authors to play fair and all such requirements will either be met or the feature in question will turned off.
+This repository contains files that are at an early and volatile stage. Not all licensing requirements may have been fully met let alone identified. It is the intension of the authors to play fair and all such requirements will either be met or the feature in question will turned off.
 
 ### Change Log
 

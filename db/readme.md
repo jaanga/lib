@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Read Me
 =======
 
@@ -39,87 +40,57 @@ Yet:
 
 * Don't forget the handicapped  
 * Not everybody has cutting edge technology
+=======
+docBrowser Read Me
+==================
+>>>>>>> 776f007910465f69bea54cb217b009ee18a2e311
 
+## Project Links
 
-### Apps are from Venus. Code is from Mars.
+You have two ways of viewing the docBrowser files:
 
+<<<<<<< HEAD
 * Two links for every repo - one for app view - one for source view  
 * And one for the read me.
 * HTML files are about using the apps
 * Moving around github is about looking at source code
 * Needs seamless transitions between running apps, parsing source code and viewing read me files 
+=======
+* Web pages hosted on GitHub: [jaanga.github.io/libs/db]( http://jaanga.github.io/libs/db/ "view the files as apps." ) <input value="<< You are now probably here." size=28 style="font:bold 12pt monospace;border-width:0;" >  
+* Source code on GitHub: [github.com/jaanga/libs/db]( https://github.com/jaanga/libs/tree/gh-pages/db "View the files as source code." ) <scan style=display:none ><< You are now probably here.</scan>
+>>>>>>> 776f007910465f69bea54cb217b009ee18a2e311
 
+## Concept
 
-### Embrace GitHub
+###Mission
+docBrowser is a very simple and very small JavaScript library for browsing GitHub Markdown files via GitHub Pages.
 
-* Fully utilizes GitHub spirit/features
+### Vision / Objectives / Desired Features
+DocBrowser should be as simple and as small as possible without being too simple and too small.
 
+## The Problem
+The primary way of understanding what a GitHub repository is about is via its Read Me files.
+GitHub Read Me files are displayed as HTML if they are written in GitHub Markdown format.
+GitHub also supports the hosting of static web pages that based on HTML, CSS and JavaScript.
+The problem is that if you want data to appear on both the Read Me file and as a web page then you need two copies of the content - one in Markdown and the other in HTML.
 
-### Effortless Navigation
+## The Solution 
+The docBrowesr library allows you to write the content once - in Markdown format - and have the content appear nicely formatted in both systems.
 
-* Moving around is as easy as changing TV channels. You can go to the next channel by clicking. Like a multipane file tree viewer.
-* You *do not* have have to go and return, go and return, go and return.
-* Browse apps and code easily.
-* Each screen shows images of the contents
-* Handles folders and files
+## Features
+* Fast, simple and small
+* Happily works with both Markdown and HTML
+* Displays an 'Instant Message' from a single designated source, read at run time, and displays it on all instances 
 
-### WORM revisited
-
-* Write once, read anywhere
-* A guiding precept is: 'Write once. Read many.'
-* This has nothing to to with WORM drives.
-* In this case meaning the ability to view files in a well-formatted fashion in either a GitHub source code repository or available as a GitHub-hosted web-page.
-
-
-### Accept Quantity
-
-* Make it really easy and really fast to look after and curate lots of projects and c=very simple to add new projects.
-
-
-### Compatibility
-
-* Markdown interpreter 
-* Compatible with airDoodle 
-* Totally embraces the GitHub thing
-
-### Oriented toward programmers 
-
-* Monospace font
-* Left justified
-* IDE-like feeling
-* Snarky attitude
-
-
-### Oriented toward Designers / Code is for dummies
-
-
-### Easy to Maintain
-
-* Lends itself to progressive improvements
-* Ability to go through lots of files - one by one - and make incremental improvements that evolve as the improvements are made and then can be easily carried0back to the previously enhanced files.
-	- or putting it another way: nothing prevents the above from happening.
-
-
-### 100% JavaScript  
-
-* Use the ability of JavaScript to create and it HTML and CSS.
-* Write with a single thought process
 
 ## Road Map
 
+* Add web font capability
 * Objectify/name space?
 
 
 ## Issues /Bugs
 
-
-
-## Project Links
-
-You have two ways of viewing the jaanga files:
-
-* Code hosted on GitHub: [jaanga.github.io]( http://jaanga.github.io/libs/db/ "view the files as apps." ) <input value="<< You are now probably here." size=28 style="font:bold 12pt monospace;border-width:0;" >  
-* Source code on GitHub: [github.com/jaanga]( https://github.com/jaanga/jaanga.github.io/libs/db/ "View the files as source code." ) <scan style=display:none ><< You are now probably here.</scan>
 
 
 ### Copyright and License
@@ -128,6 +99,41 @@ copyright &copy; 2014 Jaanga authors ~ All work herein is under the [MIT License
 This repository is at an early and volatile stage. Not all licensing requirements may have been fully met let alone identified. It is the intension of the authors to play fair and all such requirements will either be met or the feature in question will turned off.
 
 ### Change Log
+
+2014-03-21 ~ Theo
+
+* * Menus highlight appropriately when internal links are displayed in content div 
+
+2014-03-20 ~ Theo
+
+* Trying to simplify the dev stream
+* Big code clean up and simplification
+
+2014-03-19 ~ Theo
+
+* Internal links/hashes in the content div fully operational
+
+2014-03-17 ~ Theo
+
+* Progress on r6
+* Work on internal links in content div
+* Add back demo/reference files
+
+2014-03-16 ~ Theo
+
+<<<<<<< HEAD
+* Objectify/name space?
+
+
+## Issues /Bugs
+
+
+=======
+* Move the code of the HTML file and into a JavaScript file
+* Add universal IM capability
+* Make it easier to carry out global updates
+>>>>>>> 776f007910465f69bea54cb217b009ee18a2e311
+
 
 2014-03-16 ~ Theo
 
