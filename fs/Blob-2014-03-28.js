@@ -1,6 +1,6 @@
 /* Blob.js
  * A Blob implementation.
- * 2013-12-27
+ * 2013-06-20
  * 
  * By Eli Grey, http://eligrey.com
  * By Devin Samarin, https://github.com/eboyjr
@@ -163,4 +163,4 @@ else var Blob = (function (view) {
 		}
 		return builder.getBlob(type);
 	};
-}(typeof self !== "undefined" && self || typeof window !== "undefined" && window || this.content || this));
+}(self));
