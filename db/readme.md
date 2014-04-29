@@ -47,14 +47,32 @@ Yet:
 
 * Don't forget the handicapped  
 * Not everybody has cutting edge technology
-
+<!--
 ## Project Links
 
 You have two ways of viewing the docBrowser files:
 
 * Web pages hosted on GitHub: [jaanga.github.io/libs/db]( http://jaanga.github.io/libs/db/ "view the files as apps." ) <input value="<< You are now probably here." size=28 style="font:bold 12pt monospace;border-width:0;" >  
 * Source code on GitHub: [github.com/jaanga/libs/db]( https://github.com/jaanga/libs/tree/gh-pages/db "View the files as source code." ) <scan style=display:none ><< You are now probably here.</scan>
+-->
 
+## Project Links
+<!--
+You have two ways of viewing the XXX files:
+
+* Web page hosted on GitHub: [xxx.github.io]( http://xxx.github.io/ "view the files as apps." ) <input value="<< You are now probably here." size=28 style="font:bold 12pt monospace;border-width:0;" >  
+* Source code on GitHub: [github.com/xxx]( https://github.com/xxx/xxx.github.io/ "View the files as source code." ) <scan style=display:none ><< You are now probably here.</scan>
+-->
+
+Jaanga is a GitGub [organization account]( https://help.github.com/articles/what-s-the-difference-between-user-and-organization-accounts ) and has multiple owners and admins. 
+All Jaanga scripts are [FOSS]( https://en.wikipedia.org/wiki/Free_and_open-source_software ).
+Scripts are hosted on GitHub and are viewable as web pages, as described in the 'Read Me' files and as source code.
+
+The three ways of looking at the docBrowser script:
+
+1. [Live Demo]( http://jaanga.github.io/libs/db/)  << Displays the 'Read Me'
+2. [Read Me]( http://jaanga.github.io/libs/db/ "view the files as apps." ) <input value="<< You are now probably here." size=28 style="font:bold 12pt monospace;border-width:0;" >   
+3. [Source Code]( https://github.com/jaanga/libs/tree/gh-pages/db "View the files as source code." ) <scan style=display:none ><< You are now probably here.</scan>  
 
 ## Road Map
 
