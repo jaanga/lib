@@ -1,6 +1,14 @@
 docBrowser Dev Notes
 ====================
 
+<i class="fa fa-camera-retro"></i> Rules  
+Play with files in /libs/db  
+Once they are good: back up Master and copy new files into a new Master and a new Boilerplate  
+
+2014-04-29 ~ Theo
+Put the early releases into Archive folder.  
+Archive a lot of stuff into r8-dev
+R10 is up
 
 2014-03-20 ~ Theo
 

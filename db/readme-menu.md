@@ -24,5 +24,5 @@
 
 ****
 
-[Source Code on GitHub]( https://github.com/jaanga/libs/tree/gh-pages/db )  
-[Copyright and License]( https://github.com/jaanga/jaanga.github.io/blob/master/jaanga-copyright-and-mit-license.md )
+<i class="fa fa-external-link"></i> [Source code on GitHub]( https://github.com/jaanga/libs/tree/gh-pages/db )  
+<i class="fa fa-external-link"></i> [Copyright and license]( https://github.com/jaanga/jaanga.github.io/blob/master/jaanga-copyright-and-mit-license.md )
