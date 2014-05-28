@@ -23,7 +23,7 @@
 
 // Messages panel
 			var messages = menu.appendChild( document.createElement( 'div' ) );
-			messages.innerHTML = msg;
+			if ( msg ) messages.innerHTML = msg;
 
 // Content panel
 			content = document.body.appendChild( document.createElement( 'div' ) );
