@@ -9,3 +9,4 @@ FileSaver.js Read Me
 <http://eligrey.com/demos/FileSaver.js/>  
 <https://github.com/eligrey/FileSaver.js/>
 
+http://eligrey.github.io/FileSaver.js/FileSaver.js

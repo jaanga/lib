@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang=en >
+<head>
+<title>Save Canvas to PNG</title>
+<meta charset=utf-8 />
+<meta name=author content='Theo Armour' />
+</head>
+<body>
+<script src="Blob.js"></script>
+<script src="canvas-toBlob.js"></script>
+<script src="FileSaver.js"></script>
+<script>
+
+	document.body.style.cssText = ' font: bold 12pt monospace; ';
+
+	var info = document.body.appendChild( document.createElement( 'div' ) );
+	info.innerHTML = '<h1>' + document.title + '</h1>' +
+		'<p><button onclick=saveIt() >Save</button></p>';
+
+	var canvas = document.body.appendChild( document.createElement( 'canvas' ) );
+	canvas.width = canvas.height = 256;
+	context = canvas.getContext("2d"); 
+	context.fillStyle =  '#ffff00';
+	context.fillRect( 0, 0, 256, 246 );
+
+  function saveIt() {
+    canvas.toBlob( function( blob ) {
+      saveAs( blob, "howdy.png" );
+    });
+    console.log( 'saving ' ); 
+  }
+
+</script>
+</body>
+</html>

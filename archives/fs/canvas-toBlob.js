@@ -4,7 +4,7 @@
  * 
  * By Eli Grey, http://eligrey.com and Devin Samarin, https://github.com/eboyjr
  * License: X11/MIT
- *   See https://github.com/eligrey/canvas-toBlob.js/blob/master/LICENSE.md
+ *   See LICENSE.md
  */
 
 /*global self */
@@ -77,11 +77,7 @@ if (HTMLCanvasElement && !canvas_proto.toBlob) {
 		} if (this.mozGetAsFile) {
 			callback(this.mozGetAsFile("canvas", type));
 			return;
-		} if (this.msToBlob && /^\s*image\/png\s*(?:$|;)/i.test(type)) {
-			callback(this.msToBlob());
-			return;
 		}
-
 		var
 			  args = Array.prototype.slice.call(arguments, 1)
 			, dataURI = this[to_data_url].apply(this, args)
