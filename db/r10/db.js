@@ -43,48 +43,21 @@
 	}
 
 	function displayMD( hash ) {
-		var hashes = hash.split('#');
-
 // Fetch and show the content file
+		var hashes = hash.split('#');
 		content.innerHTML = converter.makeHtml( requestFile( hashes[1] ) );
 
 // Update window title to match H1 of content file
 		var title = content.innerHTML.match( /<h1(.*?)>(.*?)<\/h1>/ )[2];
 		updateContainer( title, hash )
-/*
-// Reset background color to all paragraphs in menu ~ thus automatically catching all the menu items
-		var paragraphs = document.getElementsByTagName('div');
-
-		for (var i = 0, len = paragraphs.length; i < len; i++) {
-			paragraphs[i].style.backgroundColor = '';
-		}
-
-// Highlight current menu item
-		if ( hashes[ 2 ] ) {
-			var element = document.getElementById( hashes[ 2 ] );
-			if ( element && element.style ) {
-				element.style.backgroundColor = '#edd';
-			}
-		}
-
-// Update URL hash
-		if ( hashes[1] === 'readme.md' ) {
-// if at home page, delete any hash and clean up the history
-			history.pushState( '', document.title, window.location.pathname );
-		} else {
-			location.hash = hash;
-		}
-*/
 	}
-
-
 
 	function displayHTML( hash ) {
 		var hashes = hash.split('#');
+		content.innerHTML = '<iframe id=ifr src=' + hashes[1] + ' height=98% width=100% frameborder=0 ></iframe>';
 
-		content.innerHTML = '<iframe src=' + hashes[1] + ' height=98% width=100% frameborder=0 ></iframe>';
-
-		updateContainer( 'title', hash )
+		var title = hashes[1]; // todo: find better...
+		updateContainer( title, hash )
 	}
 
 	function updateContainer( title, hash ) {
@@ -115,9 +88,7 @@
 		} else {
 			location.hash = hash;
 		}
-
 	}
-
 
 // Fetch a file
 	function requestFile( fname ) {

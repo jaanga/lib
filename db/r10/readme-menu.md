@@ -1,23 +1,21 @@
 [Parent](../../index.html ) &raquo;<br>[Repo]( ../index.html ) &raquo;<br>[App]( ./index.html )
-=================================================================================================
+===
 
-<p id=rm >
+<div id=rm >
 	<a href=JavaScript:displayPage("#readme.md#rm"); >Read Me</a>
-</p>
+</div>
 
-<i class="fa fa-external-link"></i> [Live Demo]( http://jaanga.github.com/db ) 
+<i class="fa fa-external-link"></i> [Live Demo]( http://jaanga.github.com/libs/db ) 
 
 <!--
-<p id=abc >
+<div id=abc >
 	<a href=JavaScript:displayPage("#../test-folder-abc/readme.md#abc"); >test-folder-abc Read Me</a>
-</p>
+</div>
 
-<p id=def >
+<div id=def >
 	<a href=JavaScript:displayPage("#../test-folder-def/readme.md#def"); >test-folder-def Read Me</a>
-</p>
+</div>
 -->
-
-
 
 <i class="fa fa-external-link"></i> [Source code on GitHub]( https://github.com/jaanga/libs/tree/gh-pages/db )  
 <br>
