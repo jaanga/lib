@@ -1,28 +1,35 @@
 [Jaanga](../../index.html ) &raquo;<br>[Libs]( ../index.html ) &raquo;</br>[docBrowser]( ./index.html )
-================================================================================================
+===
 
-<p id=rm >
-	<a href=JavaScript:displayPage("#readme.md#rm"); >Read Me</a>
-</p>
+<div id=rm >
+	<a href=JavaScript:displayMD("#readme.md#rm"); >Read Me</a>
+</div><br>
 
+<div id=p2 >
+	<a href=JavaScript:displayMD("#page2.md#p2"); >Page2</a>
+</div><br>
 
-<p id=p2 >
-	<a href=JavaScript:displayPage("#page2.md#p2"); >Page2</a>
-</p>
+<div id=abc >
+	<a href=JavaScript:displayMD("#test-folder-abc/readme.md#abc"); >test-folder-abc Read Me</a>
+</div>  
 
-<p id=abc >
-	<a href=JavaScript:displayPage("#test-folder-abc/readme.md#abc"); >test-folder-abc Read Me</a>
-</p>
+<div id=def >
+	<a href=JavaScript:displayMD("#test-folder-def/readme.md#def"); >test-folder-def Read Me</a>
+</div><br>
 
-<p id=def >
-	<a href=JavaScript:displayPage("#test-folder-def/readme.md#def"); >test-folder-def Read Me</a>
-</p>
+<div id=ind1 >
+	<a href=JavaScript:displayHTML("#test-folder-abc/index.html#ind1"); >ABC Index.html</a>
+</div>
+<div id=ind2 >
+	<a href=JavaScript:displayHTML("#test-folder-def/index.html#ind2"); >DEF Index.html</a>
+</div><br>
 
-<p id=dvn >
-	<a href=JavaScript:displayPage("#dev-notes.md#dvn"); >Dev Notes</a>
-</p>
+<div id=dvn >
+	<a href=JavaScript:displayMD("#dev-notes.md#dvn"); >Dev Notes</a>
+</div>
+<br>
 
-****
-
-<i class="fa fa-external-link"></i> [Source code on GitHub]( https://github.com/jaanga/libs/tree/gh-pages/db )  
-<i class="fa fa-external-link"></i> [Copyright and license]( https://github.com/jaanga/jaanga.github.io/blob/master/jaanga-copyright-and-mit-license.md )
+***
+<i class="fa fa-external-link"></i> external link  
+<i class="fa fa-github"></i> [Source code on GitHub]( https://github.com/jaanga/libs/tree/gh-pages/db )  
+<i class='fa fa-copy'></i> [Copyright and license]( https://github.com/jaanga/jaanga.github.io/blob/master/jaanga-copyright-and-mit-license.md )

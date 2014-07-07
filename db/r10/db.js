@@ -1,4 +1,4 @@
-// (c) Theo Armour ~ 2014-03-20 ~ r7 ~ MIT License 
+// (c) Theo Armour ~ 2014-07-06 ~ r10 ~ MIT License 
 
 	var converter;
 	var content;
@@ -33,24 +33,27 @@
 			window.addEventListener('hashchange', init, false );
 		}
 
-		if ( !location.hash ) {
-			displayPage( '#readme.md#rm' );
+		if ( location.hash.indexOf( '.md' ) > -1 ) {
+			displayMD( location.hash );
+		} else if ( location.hash.indexOf( '.html' ) > -1 ) {
+			displayHTML( location.hash );
 		} else {
-			displayPage( location.hash );
+			displayMD( '#readme.md#rm' );
 		}
 	}
 
-	function displayPage( hash ) {
+	function displayMD( hash ) {
 		var hashes = hash.split('#');
 
 // Fetch and show the content file
 		content.innerHTML = converter.makeHtml( requestFile( hashes[1] ) );
 
 // Update window title to match H1 of content file
-		document.title = content.innerHTML.match( /<h1(.*?)>(.*?)<\/h1>/ )[2];
-
+		var title = content.innerHTML.match( /<h1(.*?)>(.*?)<\/h1>/ )[2];
+		updateContainer( title, hash )
+/*
 // Reset background color to all paragraphs in menu ~ thus automatically catching all the menu items
-		var paragraphs = document.getElementsByTagName('p');
+		var paragraphs = document.getElementsByTagName('div');
 
 		for (var i = 0, len = paragraphs.length; i < len; i++) {
 			paragraphs[i].style.backgroundColor = '';
@@ -71,7 +74,50 @@
 		} else {
 			location.hash = hash;
 		}
+*/
 	}
+
+
+
+	function displayHTML( hash ) {
+		var hashes = hash.split('#');
+
+		content.innerHTML = '<iframe src=' + hashes[1] + ' height=98% width=100% frameborder=0 ></iframe>';
+
+		updateContainer( 'title', hash )
+	}
+
+	function updateContainer( title, hash ) {
+		var hashes = hash.split('#');
+
+// Update window title to match H1 of content file
+		document.title = title;
+
+// Reset background color to all paragraphs in menu ~ thus automatically catching all the menu items
+		var paragraphs = document.getElementsByTagName('div');
+
+		for (var i = 0, len = paragraphs.length; i < len; i++) {
+			paragraphs[i].style.backgroundColor = '';
+		}
+
+// Highlight current menu item
+		if ( hashes[ 2 ] ) {
+			var element = document.getElementById( hashes[ 2 ] );
+			if ( element && element.style ) {
+				element.style.backgroundColor = '#edd';
+			}
+		}
+
+// Update URL hash
+		if ( hashes[1] === 'readme.md' ) {
+// if at home page, delete any hash and clean up the history
+			history.pushState( '', document.title, window.location.pathname );
+		} else {
+			location.hash = hash;
+		}
+
+	}
+
 
 // Fetch a file
 	function requestFile( fname ) {

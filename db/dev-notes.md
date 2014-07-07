@@ -1,9 +1,17 @@
 docBrowser Dev Notes
 ====================
 
-<i class="fa fa-camera-retro"></i> Rules  
-Play with files in /libs/db  
-Once they are good: back up Master and copy new files into a new Master and a new Boilerplate  
+<i class="fa fa-camera-retro"></i> 
+
+Rules  
+
+Create a new rXX folder locally
+Copy db.js from libs/db/master to libs/db/rXX
+Edit readme-reader.html so it loads db.js from local rXX folder
+Play with files in /libs/db/  
+Once they are good, and copy new db.js and files into a new Master and a new Boilerplate  
+Upload to GitHub
+
 
 2014-04-29 ~ Theo
 Put the early releases into Archive folder.  
