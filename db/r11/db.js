@@ -6,29 +6,19 @@
 	function init() {
 		if ( !converter ) {
 			converter = new Showdown.converter();
+
 // Styles for the doc
 			var css = document.body.appendChild( document.createElement('style') );
 			css.innerHTML = 'body { font: normal 12pt sans-serif; }' +
-			'h1 { margin: 0; padding: 0; }' +
-//			'#group { outline: 0px solid red; margin: 0 auto; max-width: 900px; }' +
+				'h1 { margin: 0; padding: 0; }' +
 			'';
-
-//Styles for menu and content
-
-//			var basics = 'border: 3px double #eee; overflow-x: hidden; overflow-y: auto; padding: 10px; ';
-//			var horizontalsMenu = 'left: 10%; width: 15%; ';
-//			var horizontalsMenu = 'outline: 1px solid red; float: left; width: 24%;'
-//			var horizontalsContent = 'left: 30%; width: 60%; ';
-//			var verticals = 'height: ' + ( window.innerHeight * 0.88 ) + 'px; top: 60px; ';
-
 // group
 			var group = document.body.appendChild( document.createElement( 'div' ) );
 			group.style.cssText = 'outline: 0px solid red; margin: 0 auto; max-width: 900px;';
 
 // Menu panel
 			var menu = group.appendChild( document.createElement( 'div' ) );
-//			menu.style.cssText = basics + horizontalsMenu + verticals ;
-			menu.style.cssText = 'border: 3px double #eee; float: left; padding: 0 10px; width: 24%;';
+			menu.style.cssText = 'border: 3px double #eee; float: left; padding: 0 10px; width: 22%; ';
 			menu.innerHTML = converter.makeHtml( requestFile( 'readme-menu.md' ) );
 
 // Messages panel
@@ -37,8 +27,7 @@
 
 // Content panel
 			content = group.appendChild( document.createElement( 'div' ) );
-//			content.style.cssText = basics + horizontalsContent + verticals ;
-			content.style.cssText = 'outline: 0px solid red; margin: 5px 0 0 30%;' // basics + horizontalsContent + verticals ;
+			content.style.cssText = 'outline: 0px solid red; margin: 5px 0 0 30%; ';
 
 // Events
 			window.addEventListener('hashchange', init, false );
