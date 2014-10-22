@@ -14,7 +14,7 @@ and
 <https://github.com/jaanga/libs/tree/gh-pages/ado>
 
 ## docBrowser
-<http://jaanga.github.io/libs/db/doc-browser-prototype.html>
+<http://jaanga.github.io/libs/db/>
 
 <https://github.com/jaanga/libs/tree/gh-pages/db>
 
