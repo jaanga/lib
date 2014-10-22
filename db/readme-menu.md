@@ -30,6 +30,8 @@
 <br>
 
 ***
+<!--
 <i class="fa fa-external-link"></i> external link  
+-->
 <i class="fa fa-github"></i> [Source code on GitHub]( https://github.com/jaanga/libs/tree/gh-pages/db )  
 <i class='fa fa-copy'></i> [Copyright and license]( https://github.com/jaanga/jaanga.github.io/blob/master/jaanga-copyright-and-mit-license.md )

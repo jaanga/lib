@@ -1,5 +1,8 @@
 docBrowser Read Me
 ===
+[Web page view]( http://jaanga.github.io//libs/db/ "view the files as apps." ) <input value="<< You are now probably here." size=28 style="font:bold 12pt monospace;border-width:0;" >  
+[Source code view]( https://github.com/jaanga/libs/tree/gh-pages/db "View the files as source code." ) <scan style=display:none ><< You are now probably here.</scan>
+
 
 ## Concept
 
@@ -13,20 +16,19 @@ DocBrowser should be as simple and as small as possible without being too simple
 The primary way of understanding what a Gitub repository is about is via its Read Me file.
 GitHub Read Me files are displayed as HTML if they are written ib GitHub Markdown format.
 GitHub also supports the hosting of static web pages that based on HTML. CSS and JavaScript.
-The probllem is that if you want data to appear on both the Read Me file and as a web page then you need two copies of the content - ine in Markdown and the other in HTML.
+The problem is that if you want data to appear on both the Read Me file and as a web page then you need two copies of the content - ine in Markdown and the other in HTML.
 
 ## The Solution 
-The docBrowesr library allows you to write the content once - in Markdown format - and has the comtent appear nicely formatted in both systems.
+The docBrowesr library allows you to write the content once - in Markdown format - and has the content appear nicely formatted in both systems.
 
 ## Features
 * Fast, simple and small
 * Happily works with both Markdown and HTML
 * Displays an 'Instant Message' from a single designated source, read at run time, and displays it on all instances 
-
-* Two links for every repo - one for app view - one for source view  
-* And one for the read me.
+* Two links for every repo - one for app view - one for source view 
+* And one for the read me
 * HTML files are about using the apps
-* Moving around github is about looking at source code
+* Moving around GitHub is about looking at source code
 * Needs seamless transitions between running apps, parsing source code and viewing read me files 
 
 _The following are some of the thoughts going on while this app and these web pages are being developed. This text is very much a work in rapid progress._
@@ -57,22 +59,10 @@ You have two ways of viewing the docBrowser files:
 -->
 
 ## Project Links
-<!--
-You have two ways of viewing the XXX files:
-
-* Web page hosted on GitHub: [xxx.github.io]( http://xxx.github.io/ "view the files as apps." ) <input value="<< You are now probably here." size=28 style="font:bold 12pt monospace;border-width:0;" >  
-* Source code on GitHub: [github.com/xxx]( https://github.com/xxx/xxx.github.io/ "View the files as source code." ) <scan style=display:none ><< You are now probably here.</scan>
--->
 
 Jaanga is a GitGub [organization account]( https://help.github.com/articles/what-s-the-difference-between-user-and-organization-accounts ) and has multiple owners and admins. 
 All Jaanga scripts are [FOSS]( https://en.wikipedia.org/wiki/Free_and_open-source_software ).
 Scripts are hosted on GitHub and are viewable as web pages, as described in the 'Read Me' files and as source code.
-
-The three ways of looking at the docBrowser script:
-
-1. [Live Demo]( http://jaanga.github.io/libs/db/)  << Displays the 'Read Me'
-2. [Read Me]( http://jaanga.github.io/libs/db/ "view the files as apps." ) <input value="<< You are now probably here." size=28 style="font:bold 12pt monospace;border-width:0;" >   
-3. [Source Code]( https://github.com/jaanga/libs/tree/gh-pages/db "View the files as source code." ) <scan style=display:none ><< You are now probably here.</scan>  
 
 ## Road Map
 
@@ -92,6 +82,10 @@ copyright &copy; 2014 Jaanga authors ~ All work herein is under the [MIT License
 This repository is at an early and volatile stage. Not all licensing requirements may have been fully met let alone identified. It is the intension of the authors to play fair and all such requirements will either be met or the feature in question will turned off.
 
 ### Change Log
+
+2014-09-28 ~ Theo
+
+* Update read me
 
 2014-03-21 ~ Theo
 
