@@ -36,7 +36,7 @@ You have two ways of viewing the XXX files:
 * Source code on GitHub: [github.com/xxx]( https://github.com/xxx/xxx.github.io/ "View the files as source code." ) <scan style=display:none ><< You are now probably here.</scan>
 -->
 
-Jaanga is a [GitGub]( http://github.com) [organization account]( https://help.github.com/articles/what-s-the-difference-between-user-and-organization-accounts ) and has multiple owners and admins. 
+Jaanga is a [GitHub]( http://github.com) [organization account]( https://help.github.com/articles/what-s-the-difference-between-user-and-organization-accounts ) and has multiple owners and admins. 
 All Jaanga scripts are [FOSS]( https://en.wikipedia.org/wiki/Free_and_open-source_software ).
 Scripts are hosted on GitHub and are viewable as web pages, as described in the 'Read Me' files and as source code.
 
