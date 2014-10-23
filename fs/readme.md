@@ -1,5 +1,9 @@
 FileSaver.js Read Me
-====================
+===
+
+[Web page view]( http://jaanga.github.io/libs/fs/ "View files with docBrowser" ) &nbsp;
+[Source code view]( https://github.com/jaanga/libs/tree/gh-pages/fs/ "View files with GitHub")
+
 
 ## Live Demos
 
@@ -16,6 +20,11 @@ FileSaver.js Read Me
 <http://eligrey.github.io/FileSaver.js/FileSaver.js> << old
 
 ### Change Log
+
+2014-10-23 ~ Theo
+
+* add docBrowser
+* update read me
 
 2014-06-04 ~ Theo
 
