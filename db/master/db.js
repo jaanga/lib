@@ -14,7 +14,7 @@
 			'';
 // group
 			var group = document.body.appendChild( document.createElement( 'div' ) );
-			group.style.cssText = 'outline: 0px solid red; margin: 0 auto; max-width: 900px;';
+			group.style.cssText = 'outline: 0px solid red; margin: 0 auto; max-width: 1200px;';
 
 // Menu panel
 			var menu = group.appendChild( document.createElement( 'div' ) );
