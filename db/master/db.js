@@ -9,7 +9,7 @@
 
 // Styles for the doc
 			var css = document.body.appendChild( document.createElement('style') );
-			css.innerHTML = 'body { font: normal 12pt sans-serif; }' +
+			css.innerHTML = 'body { font: normal 12pt sans-serif; overflow-y: scroll; }' +
 				'h1 { margin: 0; padding: 0; }' +
 			'';
 // group
@@ -27,7 +27,7 @@
 
 // Content panel
 			content = group.appendChild( document.createElement( 'div' ) );
-			content.style.cssText = 'outline: 0px solid red; margin: 5px 0 0 30%; overflow-y: scroll;';
+			content.style.cssText = 'outline: 0px solid red; margin: 5px 0 0 30%; ';
 
 // Events
 			window.addEventListener('hashchange', init, false );
