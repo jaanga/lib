@@ -54,7 +54,7 @@
 
 	function displayHTML( hash ) {
 		var hashes = hash.split('#');
-		content.innerHTML = '<iframe id=ifr src=' + hashes[1] + ' height=98% width=100% frameborder=0 ></iframe>';
+		content.innerHTML = '<iframe id=ifr src=' + hashes[1] + ' height=' + ( window.innerHeight - 100) + ' width=100% frameborder= ></iframe>';
 
 		var title = hashes[1]; // todo: find better...
 		updateContainer( title, hash )

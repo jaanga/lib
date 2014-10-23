@@ -1,6 +1,6 @@
 [Jaanga](../../index.html ) &raquo;<br>[Libs]( ../index.html ) &raquo;</br>[docBrowser]( ./index.html )
-===
-
+=== 
+<br>
 <div id=rm >
 	<a href=JavaScript:displayMD("#readme.md#rm"); >Read Me</a>
 </div><br>
@@ -30,6 +30,7 @@
 <br>
 
 ***
+
 <!--
 <i class="fa fa-external-link"></i> external link  
 -->
