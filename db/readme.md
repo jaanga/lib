@@ -1,7 +1,7 @@
 docBrowser Read Me
 ===
-[Web page view]( http://jaanga.github.io//libs/db/ "view the files as apps." ) <input value="<< You are now probably here." size=28 style="font:bold 12pt monospace;border-width:0;" >  
-[Source code view]( https://github.com/jaanga/libs/tree/gh-pages/db "View the files as source code." ) <scan style=display:none ><< You are now probably here.</scan>
+[Web page view]( http://va3c.github.io/viewer/va3c-viewer-html5/ "View files with docBrowser" )
+[Source code view]( https://github.com/va3c/viewer/tree/gh-pages/va3c-viewer-html5 "View files with GitHub")
 
 
 ## Concept
