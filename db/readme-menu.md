@@ -28,6 +28,8 @@
 	<a href=JavaScript:displayMD("#dev-notes.md#dvn"); >Dev Notes</a>
 </div>
 <br>
+<i class="fa fa-external-link"></i> [Template]( https://jaanga.github.com/libs/db/template/index.html ) 
+<br>
 
 ***
 

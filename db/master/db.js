@@ -18,7 +18,7 @@
 
 // Menu panel
 			var menu = group.appendChild( document.createElement( 'div' ) );
-			menu.style.cssText = 'border: 3px double #eee; float: left; padding: 0 10px; width: 22%; ';
+			menu.style.cssText = 'border: 3px double #eee; float: left; overflow-x: hidden; max-height: ' + (window.innerHeight - 100) + 'px; padding: 0 10px; width: 22%; ';
 			menu.innerHTML = converter.makeHtml( requestFile( 'readme-menu.md' ) );
 
 // Messages panel
