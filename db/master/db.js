@@ -27,7 +27,7 @@
 
 // Content panel
 			content = group.appendChild( document.createElement( 'div' ) );
-			content.style.cssText = 'outline: 0px solid red; margin: 5px 0 0 30%; ';
+			content.style.cssText = 'outline: 0px solid red; margin: 5px 0 0 30%; overflow-y: scroll;';
 
 // Events
 			window.addEventListener('hashchange', init, false );
