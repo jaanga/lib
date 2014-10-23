@@ -1,11 +1,10 @@
-Libs Read Me
-============
+Jaanga Libs Read Me
+===
+[Web page view]( http://jaanga.github.io/libs/ "View files with docBrowser" ) &nbsp;
+[Source code view]( https://github.com/jaanga/libs/ "View files with GitHub")
+
 
 Files we use a lot...  
-
-<http://jaanga.github.io/libs>  
-and  
-<https://github.com/jaanga/libs>
 
 
 ## airDoodle
@@ -24,7 +23,11 @@ and
 <https://github.com/jaanga/libs/tree/gh-pages/fs>
 
 ## Showdown
-A frequenntly used Markdown interpreter  
-[Showdown GitHub Page]( http://jaanga.github.io/libs/md )  
-[Showdown GitHub Source]( https://github.com/jaanga/libs/tree/gh-pages/md )
+
+_This library is being deprecated as the library is now availabe via [CDNS]( https://cdnjs.com/libraries/filesaver.js )_
+
+A frequently used Markdown interpreter  
+
+[Showdown on Jaanga Read Me]( http://jaanga.github.io/libs/md )  
+
 
