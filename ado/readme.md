@@ -1,10 +1,14 @@
 airDoodle
-=========
+==
+[Web page view]( http://jaanga.github.io/libs/ado/ "View files with docBrowser" ) &nbsp;
+[Source code view]( https://github.com/jaanga/libs/tree/gh-pages/ado/ "View files with GitHub")
+
+
 The future of meta-communication
 
 ### Live Demo
 
-[airDoodle R1]( http://jaanga.github.io/libs/ado/index.html )
+[airDoodle R1]( http://jaanga.github.io/libs/ado/latest/index.html )
 
 ### References
 
@@ -13,7 +17,12 @@ The future of meta-communication
 ### Copyright, License and Credits
 copyright &copy; 2013 Jaanga authors ~ MIT License
 
-###Change Log
+### Change Log
+
+2014-10-23 ~ Theo
+
+* Add docBrowser files
+* Update read me
 
 2013-12-22 ~ Theo
 

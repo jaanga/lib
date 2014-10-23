@@ -2,12 +2,12 @@ XXX Read Me
 ===
 
 [Web page view]( http://XXX.github.io/XXX/ "View files with docBrowser" ) &nbsp;
-[Source code view]( https://github.com/XXX/tree/gh-pages/XXX/ "View files with GitHub")
+[Source code view]( https://github.com/XXX/XXX/tree/gh-pages/XXX/ "View files with GitHub")
 
 
 ### Live Demo
 
-<iframe src="http://XXX.github.io/latest/index.html" width=100% height=500px class='overview' >
+<iframe src="http://XXX.github.io/XXX/latest/index.html" width=100% height=500px class='overview' >
 There is an `iframe` here. It is not visible when viewed on github.com/XXX. To view, click 'Web page view' just above.
 </iframe>
 _XXX - latest revision_ / [Full Screen]( http://XXX.github.io/latest/index.html)

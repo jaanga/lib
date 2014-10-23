@@ -4,6 +4,9 @@ FileSaver.js Read Me
 [Web page view]( http://jaanga.github.io/libs/fs/ "View files with docBrowser" ) &nbsp;
 [Source code view]( https://github.com/jaanga/libs/tree/gh-pages/fs/ "View files with GitHub")
 
+## Concept
+
+FileSaver.js implements the HTML5 W3C saveAs() FileSaver interface in browsers that do not natively support it. T
 
 ## Live Demos
 

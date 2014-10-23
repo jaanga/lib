@@ -8,25 +8,30 @@ Files we use a lot...
 
 
 ## airDoodle
-<http://jaanga.github.io/libs/ado/index.html>
 
-<https://github.com/jaanga/libs/tree/gh-pages/ado>
+The future of meta-communication
+
+[airDoodle Read Me]( http://jaanga.github.io/libs/ado/index.html )
+
 
 ## docBrowser
-<http://jaanga.github.io/libs/db/>
 
-<https://github.com/jaanga/libs/tree/gh-pages/db>
+docBrowser enables a write once, read many ability for files hosted using the GitHub Pages pages feature.
+ 
+[docBrowser Read Me]( http://jaanga.github.io/libs/db/ )
+
 
 ## FileSaver.js
-<http://jaanga.github.io/libs/fs/file-saver.html>
 
-<https://github.com/jaanga/libs/tree/gh-pages/fs>
+FileSaver.js implements the HTML5 W3C saveAs() FileSaver interface in browsers that do not natively support it.
+
+[FileSaver.js Read Me]( http://jaanga.github.io/libs/fs/file-saver.html )
 
 ## Showdown
 
 _This library is being deprecated as the library is now availabe via [CDNS]( https://cdnjs.com/libraries/filesaver.js )_
 
-A frequently used Markdown interpreter  
+A frequently used Markdown interpreter - used by docBrowser
 
 [Showdown on Jaanga Read Me]( http://jaanga.github.io/libs/md )  
 
