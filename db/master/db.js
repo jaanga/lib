@@ -11,6 +11,7 @@
 			var css = document.body.appendChild( document.createElement('style') );
 			css.innerHTML = 'body { font: normal 12pt sans-serif; overflow-y: scroll; }' +
 				'h1 { margin: 0; padding: 0; }' +
+				'.menu { margin: 20px 0; }' +
 			'';
 // group
 			var group = document.body.appendChild( document.createElement( 'div' ) );

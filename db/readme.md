@@ -18,6 +18,36 @@ GitHub Read Me files are displayed as HTML if they are written ib GitHub Markdow
 GitHub also supports the hosting of static web pages that based on HTML. CSS and JavaScript.
 The problem is that if you want data to appear on both the Read Me file and as a web page then you need two copies of the content - ine in Markdown and the other in HTML.
 
+### Two links for each repository
+Most people use and think of GitHub as a wonderful repository for computer source code.
+GitHub, however, also provides a free and very powerful web site hosting services via their [GitHub Pages]( http://pages.github.com/ "Thank you, GitHub!" ) feature.
+This feature only works for static files - such as HTML, CSS, JavaScript, text and image files.
+Since these are the only files types I deal with, GitHub hosting is delightful hosting solution.
+
+Thus for almost all the work I do you will see two links. One goes to the web page or app hosted by GitHub.
+The other link points you to the source code for the page or app.
+
+### Write once, read many
+In order to be as effective and efficient as possible, the goal is to write content once and have it appear as required or as necessary in either app or source code or both.
+GitHub source repositories support the display of files in [Markdown]( http://en.wikipedia.org/wiki/Markdown ) format: every Markdown file is displayed as HTML.
+
+A current effort is to use these Markdown files in both the source code repositories and web page hosting.
+So, for example, the web pages at theo-armour.github.io are written in HTML but each page calls up a Markdown file
+that is used to populate the right-side content panel of each page.
+
+### Intuitiveness needed
+Apps are from Venus. Code is from Mars. Much time in producing the above sites and text is being devoted
+to the process of developing effective terminology and user experience for bridging the gap between apps and source, between GitHub.io and github.com.
+
+This process will be discussed and dissected in more detail in the fullness of time.
+
+### Fonts
+These web pages call for the use of the default monospace font as designated by your browser. In most situations this ends us as the '[Courier]( http://en.wikipedia.org/wiki/Courier_(typeface) )' typeface.
+This is not standard practice. Most web pages call for a proportionally spaced font. Why the unusual practice? Most of my work is aimed at coders and programmers who are interested in design.
+Programmers and coders work with monospace fonts. So I design my sites to appear in a programmatic or orderly way.
+
+
+
 ## The Solution 
 The docBrowesr library allows you to write the content once - in Markdown format - and has the content appear nicely formatted in both systems.
 
