@@ -15,7 +15,7 @@ FileSaver.js implements the HTML5 W3C saveAs() FileSaver interface in browsers t
 
 Add these scripts to your file:
 
-	<script src=http://jaanga.github.io/libs/fs/BlobBuilder.js /></script>  
+	<script src=http://jaanga.github.io/libs/fs/Blob.js /></script>  
 	<script src=http://jaanga.github.io/libs/fs/canvas-toBlob.js /></script>  
 	<script src=http://jaanga.github.io/libs/fs/FileSaver.js /></script>  
 
