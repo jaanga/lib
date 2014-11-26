@@ -6,29 +6,34 @@
 <meta name=author content='Theo Armour' />
 </head>
 <body>
-<script src="Blob.js"></script>
-<script src="canvas-toBlob.js"></script>
-<script src="FileSaver.js"></script>
+<script src=http://jaanga.github.io/libs/fs/Blob.js /></script>
+<script src=http://jaanga.github.io/libs/fs/canvas-toBlob.js /></script>
+<script src=http://jaanga.github.io/libs/fs/FileSaver.js /></script>
 <script>
+	var canvas;
 
-	document.body.style.cssText = ' font: bold 12pt monospace; ';
+	init();
 
-	var info = document.body.appendChild( document.createElement( 'div' ) );
-	info.innerHTML = '<h1>' + document.title + '</h1>' +
-		'<p><button onclick=saveIt() >Save</button></p>';
+	function init() {
+		document.body.style.cssText = ' font: bold 12pt monospace; ';
 
-	var canvas = document.body.appendChild( document.createElement( 'canvas' ) );
-	canvas.width = canvas.height = 256;
-	context = canvas.getContext("2d"); 
-	context.fillStyle =  '#ffff00';
-	context.fillRect( 0, 0, 256, 246 );
+		var info = document.body.appendChild( document.createElement( 'div' ) );
+		info.innerHTML = '<a href="" ><h1>' + document.title + '</h1></a>' +
+			'<p><button onclick=saveIt() >Save</button></p>';
 
-  function saveIt() {
-    canvas.toBlob( function( blob ) {
-      saveAs( blob, "howdy.png" );
-    });
-    console.log( 'saving ' ); 
-  }
+		canvas = document.body.appendChild( document.createElement( 'canvas' ) );
+		canvas.width = canvas.height = 256;
+		context = canvas.getContext("2d");
+		context.fillStyle =  '#ffff00';
+		context.fillRect( 0, 0, 256, 246 );
+	}
+
+	function saveIt() {
+		canvas.toBlob( function( blob ) {
+			saveAs( blob, "very-yellow.png" );
+		});
+		console.log( 'saving ' );
+	}
 
 </script>
 </body>

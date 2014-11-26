@@ -3,11 +3,13 @@
 <br>
 
 <div id=rm >
-	<a href=JavaScript:displayPage("#readme.md#rm"); >Read Me</a>
+	<a href=JavaScript:displayMD("#readme.md#rm"); >Read Me</a>
 </div>
 <br>
 
-<i class="fa fa-external-link"></i> [Live Demo]( http://jaanga.github.io/libs/fs/file-saver.html) 
+<i class="fa fa-external-link"></i> [Live Demo Text]( ./file-saver.html ) 
+
+<i class="fa fa-external-link"></i> [Live Demo Canvas]( ./save-canvas-to-png.html ) 
 
 <i class="fa fa-github"></i> [Source code on GitHub]( https://github.com/jaanga/libs/tree/gh-pages/fs/ )  
 

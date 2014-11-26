@@ -10,7 +10,8 @@
 	document.body.style.cssText = 'font: normal 12pt monospace';
 	
 	var info = document.body.appendChild( document.createElement( 'div' ) );
-	info.innerHTML = '<p><a href=JavaScript:saveIt(); >Save</a></p>';
+	info.innerHTML = '<a href="" ><h1>' + document.title + '</h1></a>' +
+		'<p><a href=JavaScript:saveIt(); >Save</a></p>';
 
 	var text = document.body.appendChild( document.createElement( 'textarea' ) );
 	text.style.cssText = 'height: 200px; width: 500px;';
