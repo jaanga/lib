@@ -6,5 +6,5 @@ View only on GitHub
 
 
 View the following only on the web page
-<input type=button value='Source code on GitHub' onclick=window.location.href='https://github.com/jaanga/libs/md2html/ '; />
+<input type=button value='Source code on GitHub' onclick=window.location.href='https://github.com/jaanga/libs/md2html/'; />
 
