@@ -1,7 +1,7 @@
 Markdown to HTML
 ===
 
-<http://jaanga.github.io/libs/md2html/index-all-in-one,html>
+<http://jaanga.github.io/libs/md2html/index-all-in-one.html>
 
 <http://jaanga.github.io/libs/md2html/index.html>
 
